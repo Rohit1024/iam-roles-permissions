@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import Link from "./Link.astro";
+
+const allRoles = await getCollection("roles");
+
+// Create a Set of unique permissions across all roles
+const uniquePermissions = new Set(
+  allRoles.flatMap((role) => role.data.included_permissions)
+);
+const uniquePermissionsCount = uniquePermissions.size;
+---
+
+<Card>
+  <CardHeader>
+    <CardTitle>Get Started</CardTitle>
+    <CardDescription className="my-2">
+      Explore the <Badge>{allRoles.length}</Badge> GCP
+      <Link href="/roles" class="hover:underline font-bold text-primary"
+        >Roles</Link
+      >
+      to see their permissions or browse the
+      <Badge>{uniquePermissionsCount}</Badge> GCP
+      <Link href="/permissions" class="hover:underline font-bold text-primary"
+        >Permissions</Link
+      >
+      to find roles that include specific permissions.
+    </CardDescription>
+  </CardHeader>
+</Card>

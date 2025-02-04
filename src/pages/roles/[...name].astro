@@ -1,0 +1,25 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import Layout from "@/layouts/BaseLayout.astro";
+import RoleDetailPage from "@/components/react/RoleDetailPage";
+
+type Role = CollectionEntry<"roles">;
+
+export async function getStaticPaths() {
+  const roles = await getCollection("roles");
+  return roles.map((role) => ({
+    params: { name: role.id },
+    props: { role: role },
+  }));
+}
+
+const { role } = Astro.props;
+---
+
+<Layout
+  title={`Role : ${role.data.name}`}
+  description={role.data.description}
+  transition:persist
+>
+  <RoleDetailPage client:load role={role} />
+</Layout>

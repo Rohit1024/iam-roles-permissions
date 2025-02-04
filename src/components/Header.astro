@@ -1,0 +1,52 @@
+---
+import ThemeToggle from "@/components/ThemeToggle.astro";
+import { NAV_LINKS, SITE } from "@/config/consts";
+import Link from "@/components/Link.astro";
+import MobileMenu from "@/components/react/mobile-menu";
+import Container from "@/components/Container.astro";
+import { getImage } from "astro:assets";
+import logo from "../../public/identity_and_access_management.png";
+const optimizedImage = await getImage({
+  src: logo,
+  format: "png",
+});
+---
+
+<header
+  class="sticky top-0 z-10 bg-background/50 backdrop-blur-md border-b"
+  transition:persist
+>
+  <Container>
+    <div class="flex flex-wrap items-center justify-between gap-4 py-4">
+      <Link
+        href="/"
+        class="flex flex-shrink-0 items-center gap-2 text-xl font-semibold transition-colors duration-300 hover:text-primary"
+      >
+        <img
+          src={optimizedImage.src}
+          width={optimizedImage.attributes.width}
+          height={optimizedImage.attributes.height}
+          alt=""
+          class="size-6"
+        />
+        {SITE.TITLE}
+      </Link>
+      <div class="flex items-center gap-2 md:gap-4">
+        <nav class="hidden items-center gap-4 text-sm sm:gap-6 md:flex">
+          {
+            NAV_LINKS.map((item) => (
+              <Link
+                href={item.href}
+                class="capitalize text-foreground/60 transition-colors hover:text-foreground/80"
+              >
+                {item.label}
+              </Link>
+            ))
+          }
+        </nav>
+        <MobileMenu client:load transition:persist />
+        <ThemeToggle />
+      </div>
+    </div>
+  </Container>
+</header>

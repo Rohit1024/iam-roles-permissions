@@ -1,0 +1,12 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { SITE } from "@/config/consts";
+import Container from "@/components/Container.astro";
+import Home from "@/components/Home.astro";
+---
+
+<BaseLayout title={SITE.TITLE} description={SITE.DESCRIPTION}>
+  <Container class="flex flex-col">
+    <Home />
+  </Container>
+</BaseLayout>

@@ -1,0 +1,33 @@
+---
+import { getCollection } from "astro:content";
+import PermissionDetailPage from "@/components/react/PermissionDetailPage";
+import Layout from "@/layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const roles = await getCollection("roles");
+  const permissions = new Set();
+
+  // Collect all unique permissions
+  roles.forEach((role) => {
+    role.data.included_permissions.forEach((permission) => {
+      permissions.add(permission);
+    });
+  });
+
+  return Array.from(permissions).map((permission) => ({
+    params: { permission },
+    props: {
+      permission,
+      roles: roles.filter((role) =>
+        role.data.included_permissions.includes(permission as string)
+      ),
+    },
+  }));
+}
+
+const { permission, roles } = Astro.props;
+---
+
+<Layout title={`Permission : ${permission}`} transition:persist>
+  <PermissionDetailPage client:load permission={permission} roles={roles} />
+</Layout>
