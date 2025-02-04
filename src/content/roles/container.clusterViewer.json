@@ -1,0 +1,14 @@
+{
+  "name": "roles/container.clusterViewer",
+  "title": "Kubernetes Engine Cluster Viewer",
+  "description": "Get and list access to GKE Clusters.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "container.clusters.get",
+    "container.clusters.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

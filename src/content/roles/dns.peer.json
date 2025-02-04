@@ -1,0 +1,11 @@
+{
+  "name": "roles/dns.peer",
+  "title": "DNS Peer",
+  "description": "Access to target networks with DNS peering zones",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dns.networks.targetWithPeeringZone"
+  ],
+  "stage": "GA"
+}

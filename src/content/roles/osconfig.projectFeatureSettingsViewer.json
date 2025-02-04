@@ -1,0 +1,13 @@
+{
+  "name": "roles/osconfig.projectFeatureSettingsViewer",
+  "title": "Project Feature Settings Viewer",
+  "description": "Read access to project feature settings",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "osconfig.projectFeatureSettings.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "roles/clouddebugger.agent",
+  "title": "Cloud Debugger Agent",
+  "description": "Cloud Debugger agents are allowed to register and provide debug snapshot data.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "clouddebugger.breakpoints.list",
+    "clouddebugger.breakpoints.listActive",
+    "clouddebugger.breakpoints.update",
+    "clouddebugger.debuggees.create"
+  ],
+  "stage": "BETA"
+}

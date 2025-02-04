@@ -1,0 +1,18 @@
+{
+  "name": "roles/earthengine.appsPublisher",
+  "title": "Earth Engine Apps Publisher",
+  "description": "Publisher of Earth Engine Apps",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "iam.serviceAccounts.create",
+    "iam.serviceAccounts.disable",
+    "iam.serviceAccounts.enable",
+    "iam.serviceAccounts.get",
+    "iam.serviceAccounts.getIamPolicy",
+    "iam.serviceAccounts.setIamPolicy",
+    "resourcemanager.projects.get",
+    "serviceusage.services.get"
+  ],
+  "stage": "BETA"
+}

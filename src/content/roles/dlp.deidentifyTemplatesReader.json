@@ -1,0 +1,12 @@
+{
+  "name": "roles/dlp.deidentifyTemplatesReader",
+  "title": "DLP De-identify Templates Reader",
+  "description": "Read DLP de-identify templates.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dlp.deidentifyTemplates.get",
+    "dlp.deidentifyTemplates.list"
+  ],
+  "stage": "GA"
+}

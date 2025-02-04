@@ -1,0 +1,14 @@
+{
+  "name": "roles/bigquery.connectionUser",
+  "title": "BigQuery Connection User",
+  "description": "",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "bigquery.connections.get",
+    "bigquery.connections.getIamPolicy",
+    "bigquery.connections.list",
+    "bigquery.connections.use"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/dlp.storedInfoTypesReader",
+  "title": "DLP Stored InfoTypes Reader",
+  "description": "Read DLP stored info types.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dlp.storedInfoTypes.get",
+    "dlp.storedInfoTypes.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/resourcemanager.folderMover",
+  "title": "Folder Mover",
+  "description": "Move a folder and all of its child resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.folders.move",
+    "resourcemanager.projects.move"
+  ],
+  "stage": "GA"
+}

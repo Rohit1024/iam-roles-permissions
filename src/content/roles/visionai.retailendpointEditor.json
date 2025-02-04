@@ -1,0 +1,9 @@
+{
+  "name": "roles/visionai.retailendpointEditor",
+  "title": "Vision AI RetailEndpoint Editor",
+  "description": "Access to read and write Vision AI RetailEndpoints.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [],
+  "stage": "BETA"
+}

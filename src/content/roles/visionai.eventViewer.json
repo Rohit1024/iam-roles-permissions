@@ -1,0 +1,12 @@
+{
+  "name": "roles/visionai.eventViewer",
+  "title": "Vision AI Event Viewer",
+  "description": "Access to read Vision AI Events.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "visionai.events.get",
+    "visionai.events.list"
+  ],
+  "stage": "BETA"
+}

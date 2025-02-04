@@ -1,0 +1,12 @@
+{
+  "name": "roles/gkedataplanemanagement.warpRunServiceAgent",
+  "title": "Warp Run Service Agent",
+  "description": "Gives the Warp Run service agent access to Cloud Platform resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

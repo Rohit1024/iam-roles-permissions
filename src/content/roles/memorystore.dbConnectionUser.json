@@ -1,0 +1,11 @@
+{
+  "name": "roles/memorystore.dbConnectionUser",
+  "title": "Memorystore DB Connector User",
+  "description": "Access to connecting to Memorystore Server db.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "memorystore.instances.connect"
+  ],
+  "stage": "GA"
+}

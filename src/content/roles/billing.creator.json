@@ -1,0 +1,12 @@
+{
+  "name": "roles/billing.creator",
+  "title": "Billing Account Creator",
+  "description": "Creator of billing accounts.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "billing.accounts.create",
+    "resourcemanager.organizations.get"
+  ],
+  "stage": "GA"
+}

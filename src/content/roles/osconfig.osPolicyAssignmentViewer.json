@@ -1,0 +1,15 @@
+{
+  "name": "roles/osconfig.osPolicyAssignmentViewer",
+  "title": "OSPolicyAssignment Viewer",
+  "description": "Viewer of OS Policy Assignments",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "osconfig.osPolicyAssignments.get",
+    "osconfig.osPolicyAssignments.list",
+    "osconfig.osPolicyAssignments.searchPolicies",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

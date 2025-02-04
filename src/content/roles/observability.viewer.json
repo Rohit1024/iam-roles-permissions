@@ -1,0 +1,13 @@
+{
+  "name": "roles/observability.viewer",
+  "title": "Observability Viewer",
+  "description": "Read only access to Observability resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "observability.analyticsViews.get",
+    "observability.analyticsViews.list",
+    "observability.scopes.get"
+  ],
+  "stage": "BETA"
+}

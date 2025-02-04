@@ -1,0 +1,13 @@
+{
+  "name": "roles/networksecurity.interceptEndpointUser",
+  "title": "Intercept Endpoint User",
+  "description": "Allows a consumer to connect their networks to a interceptEndpointGroup.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "networksecurity.interceptEndpointGroups.get",
+    "networksecurity.interceptEndpointGroups.list",
+    "networksecurity.interceptEndpointGroups.use"
+  ],
+  "stage": "BETA"
+}

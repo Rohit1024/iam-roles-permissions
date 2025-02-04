@@ -1,0 +1,17 @@
+{
+  "name": "roles/workstations.workstationCreator",
+  "title": "Cloud Workstations Creator",
+  "description": "Grants ability to create Workstation resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "workstations.operations.get",
+    "workstations.workstationClusters.get",
+    "workstations.workstationClusters.list",
+    "workstations.workstationConfigs.get",
+    "workstations.workstations.create"
+  ],
+  "stage": "GA"
+}

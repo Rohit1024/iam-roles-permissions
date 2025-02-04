@@ -1,0 +1,12 @@
+{
+  "name": "roles/logging.linkViewer",
+  "title": "Log Link Accessor",
+  "description": "Ability to see links for a bucket.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "logging.links.get",
+    "logging.links.list"
+  ],
+  "stage": "GA"
+}

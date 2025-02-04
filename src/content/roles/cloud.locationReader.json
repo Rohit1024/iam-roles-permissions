@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloud.locationReader",
+  "title": "Location reader",
+  "description": "Read and enumerate locations available for resource creation.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloud.locations.get",
+    "cloud.locations.list"
+  ],
+  "stage": "BETA"
+}

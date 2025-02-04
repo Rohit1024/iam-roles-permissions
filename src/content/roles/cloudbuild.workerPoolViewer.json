@@ -1,0 +1,14 @@
+{
+  "name": "roles/cloudbuild.workerPoolViewer",
+  "title": "Cloud Build WorkerPool Viewer",
+  "description": "Can view WorkerPools",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudbuild.workerpools.get",
+    "cloudbuild.workerpools.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

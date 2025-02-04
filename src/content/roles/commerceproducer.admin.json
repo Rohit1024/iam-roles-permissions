@@ -1,0 +1,13 @@
+{
+  "name": "roles/commerceproducer.admin",
+  "title": "Commerce Producer Admin",
+  "description": "Grants full access to all resources in Cloud Commerce Producer API.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "commercebusinessenablement.partnerInfo.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

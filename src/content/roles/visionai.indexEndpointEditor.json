@@ -1,0 +1,18 @@
+{
+  "name": "roles/visionai.indexEndpointEditor",
+  "title": "VisionAI Warehouse IndexEndpoint Editor",
+  "description": "Read, write and create access to all index endpoints level resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "visionai.indexEndpoints.create",
+    "visionai.indexEndpoints.delete",
+    "visionai.indexEndpoints.deploy",
+    "visionai.indexEndpoints.get",
+    "visionai.indexEndpoints.list",
+    "visionai.indexEndpoints.search",
+    "visionai.indexEndpoints.undeploy",
+    "visionai.indexEndpoints.update"
+  ],
+  "stage": "BETA"
+}

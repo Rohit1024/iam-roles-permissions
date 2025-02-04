@@ -1,0 +1,19 @@
+{
+  "name": "roles/cloudtestservice.directAccessAdmin",
+  "title": "Firebase Test Lab Direct Access Admin",
+  "description": "Administrator owning access to Direct Access",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudtestservice.devicesession.cancel",
+    "cloudtestservice.devicesession.create",
+    "cloudtestservice.devicesession.get",
+    "cloudtestservice.devicesession.list",
+    "cloudtestservice.devicesession.update",
+    "cloudtestservice.devicesession.use",
+    "cloudtestservice.environmentcatalog.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

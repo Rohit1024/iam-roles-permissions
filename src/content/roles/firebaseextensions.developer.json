@@ -1,0 +1,15 @@
+{
+  "name": "roles/firebaseextensions.developer",
+  "title": "Firebase Extensions Developer",
+  "description": "View, create, and delete Firebase Extensions Instances and Extensions Versions, and update Extensions Instances",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "firebase.clients.get",
+    "firebase.clients.list",
+    "firebase.projects.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

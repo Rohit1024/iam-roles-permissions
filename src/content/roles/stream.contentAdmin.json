@@ -1,0 +1,18 @@
+{
+  "name": "roles/stream.contentAdmin",
+  "title": "Stream Content Admin",
+  "description": "Full access to all StreamContent resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "stream.streamContents.build",
+    "stream.streamContents.create",
+    "stream.streamContents.delete",
+    "stream.streamContents.get",
+    "stream.streamContents.list",
+    "stream.streamContents.update"
+  ],
+  "stage": "GA"
+}

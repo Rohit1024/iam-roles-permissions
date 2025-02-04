@@ -1,0 +1,11 @@
+{
+  "name": "roles/dataplex.dataReader",
+  "title": "Dataplex Data Reader",
+  "description": "Read only access to data. To be granted to Dataplex resources Lake, Zone or Asset only.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dataplex.assets.readData"
+  ],
+  "stage": "GA"
+}

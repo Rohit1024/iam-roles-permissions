@@ -1,0 +1,11 @@
+{
+  "name": "roles/securitycenter.simulationsViewer",
+  "title": "Security Center Simulations Reader",
+  "description": "Read access to security center simulations",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "securitycenter.simulations.get"
+  ],
+  "stage": "GA"
+}

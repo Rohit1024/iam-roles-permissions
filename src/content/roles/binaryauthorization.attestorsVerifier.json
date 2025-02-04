@@ -1,0 +1,15 @@
+{
+  "name": "roles/binaryauthorization.attestorsVerifier",
+  "title": "Binary Authorization Attestor Image Verifier",
+  "description": "Caller of Binary Authorization Attestors VerifyImageAttested",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "binaryauthorization.attestors.get",
+    "binaryauthorization.attestors.list",
+    "binaryauthorization.attestors.verifyImageAttested",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

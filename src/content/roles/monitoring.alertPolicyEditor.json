@@ -1,0 +1,15 @@
+{
+  "name": "roles/monitoring.alertPolicyEditor",
+  "title": "Monitoring AlertPolicy Editor",
+  "description": "Read/write access to alerting policies.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "monitoring.alertPolicies.create",
+    "monitoring.alertPolicies.delete",
+    "monitoring.alertPolicies.get",
+    "monitoring.alertPolicies.list",
+    "monitoring.alertPolicies.update"
+  ],
+  "stage": "GA"
+}

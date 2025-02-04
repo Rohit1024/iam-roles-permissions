@@ -1,0 +1,15 @@
+{
+  "name": "roles/clouddeploy.jobRunner",
+  "title": "Cloud Deploy Runner",
+  "description": "Permission to execute Cloud Deploy work without permission to deliver to a target.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "clouddeploy.config.get",
+    "logging.logEntries.create",
+    "storage.objects.create",
+    "storage.objects.get",
+    "storage.objects.list"
+  ],
+  "stage": "GA"
+}

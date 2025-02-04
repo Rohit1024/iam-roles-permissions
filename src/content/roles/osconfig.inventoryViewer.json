@@ -1,0 +1,14 @@
+{
+  "name": "roles/osconfig.inventoryViewer",
+  "title": "OS Inventory Viewer",
+  "description": "Viewer of OS Inventories",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "osconfig.inventories.get",
+    "osconfig.inventories.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

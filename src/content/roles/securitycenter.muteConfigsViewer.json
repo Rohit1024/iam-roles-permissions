@@ -1,0 +1,12 @@
+{
+  "name": "roles/securitycenter.muteConfigsViewer",
+  "title": "Security Center Mute Configurations Viewer",
+  "description": "Read access to security center mute configurations",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "securitycenter.muteconfigs.get",
+    "securitycenter.muteconfigs.list"
+  ],
+  "stage": "GA"
+}

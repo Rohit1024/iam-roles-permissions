@@ -1,0 +1,13 @@
+{
+  "name": "roles/cloudquotas.viewer",
+  "title": "Cloud Quotas Viewer",
+  "description": "Readonly access to Cloud Quotas resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudquotas.quotas.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

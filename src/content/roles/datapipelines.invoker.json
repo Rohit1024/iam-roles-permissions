@@ -1,0 +1,13 @@
+{
+  "name": "roles/datapipelines.invoker",
+  "title": "Data pipelines Invoker",
+  "description": "Invoker of Data pipelines jobs",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "datapipelines.pipelines.run",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

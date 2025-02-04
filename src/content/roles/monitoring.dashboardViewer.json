@@ -1,0 +1,12 @@
+{
+  "name": "roles/monitoring.dashboardViewer",
+  "title": "Monitoring Dashboard Configuration Viewer",
+  "description": "Read-only access to dashboard configurations.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "monitoring.dashboards.get",
+    "monitoring.dashboards.list"
+  ],
+  "stage": "GA"
+}

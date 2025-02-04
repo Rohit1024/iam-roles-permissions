@@ -1,0 +1,11 @@
+{
+  "name": "roles/cloudfunctions.invoker",
+  "title": "Cloud Functions Invoker",
+  "description": "Ability to invoke 1st gen HTTP functions with restricted access. 2nd gen functions need the Cloud Run Invoker role instead.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudfunctions.functions.invoke"
+  ],
+  "stage": "GA"
+}

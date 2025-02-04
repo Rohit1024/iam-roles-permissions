@@ -1,0 +1,9 @@
+{
+  "name": "roles/dataform.codeCommenter",
+  "title": "Code Commenter",
+  "description": "Permissions to comment, at the repository level. Grants CRUD access over commentThread and comment resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [],
+  "stage": "BETA"
+}

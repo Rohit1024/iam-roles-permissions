@@ -1,0 +1,11 @@
+{
+  "name": "roles/cloudoptimization.viewer",
+  "title": "Cloud Optimization AI Viewer",
+  "description": "Viewer of Cloud Optimization AI resources",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudoptimization.operations.get"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/resourcemanager.projectCreator",
+  "title": "Project Creator",
+  "description": "Access to create new GCP projects.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.create"
+  ],
+  "stage": "GA"
+}

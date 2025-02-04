@@ -1,0 +1,20 @@
+{
+  "name": "roles/dataplex.metadataReader",
+  "title": "Dataplex Metadata Reader",
+  "description": "Read only access to metadata.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dataplex.assets.get",
+    "dataplex.assets.list",
+    "dataplex.entities.get",
+    "dataplex.entities.list",
+    "dataplex.partitions.get",
+    "dataplex.partitions.list",
+    "dataplex.zones.get",
+    "dataplex.zones.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

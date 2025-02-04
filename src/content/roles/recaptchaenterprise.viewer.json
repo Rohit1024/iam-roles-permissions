@@ -1,0 +1,19 @@
+{
+  "name": "roles/recaptchaenterprise.viewer",
+  "title": "reCAPTCHA Enterprise Viewer",
+  "description": "Access to view reCAPTCHA Enterprise keys and metrics",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "monitoring.timeSeries.list",
+    "recaptchaenterprise.firewallpolicies.get",
+    "recaptchaenterprise.firewallpolicies.list",
+    "recaptchaenterprise.keys.get",
+    "recaptchaenterprise.keys.list",
+    "recaptchaenterprise.metrics.get",
+    "recaptchaenterprise.projectmetadata.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

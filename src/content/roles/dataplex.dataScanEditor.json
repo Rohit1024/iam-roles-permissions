@@ -1,0 +1,20 @@
+{
+  "name": "roles/dataplex.dataScanEditor",
+  "title": "Dataplex DataScan Editor",
+  "description": "Write access to DataScan resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dataplex.datascans.create",
+    "dataplex.datascans.delete",
+    "dataplex.datascans.get",
+    "dataplex.datascans.getData",
+    "dataplex.datascans.getIamPolicy",
+    "dataplex.datascans.list",
+    "dataplex.datascans.run",
+    "dataplex.datascans.update",
+    "dataplex.operations.get",
+    "dataplex.operations.list"
+  ],
+  "stage": "GA"
+}

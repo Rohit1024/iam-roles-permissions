@@ -1,0 +1,14 @@
+{
+  "name": "roles/mapsanalytics.mobilitySolutionsOverageViewer",
+  "title": "Mobility Solutions Overages Viewer",
+  "description": "Grants read-only access to Mobility Solutions Overages metric data.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "mapsanalytics.metricData.queryMobilitySolutionsOverageData",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "serviceusage.services.list"
+  ],
+  "stage": "BETA"
+}

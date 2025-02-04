@@ -1,0 +1,9 @@
+{
+  "name": "roles/discoveryengine.notebookOwner",
+  "title": "Cloud NotebookLM Notebook Owner",
+  "description": "Grants full access to a Cloud NotebookLM Notebook.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [],
+  "stage": "BETA"
+}

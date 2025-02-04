@@ -1,0 +1,17 @@
+{
+  "name": "roles/binaryauthorization.policyEvaluator",
+  "title": "Binary Authorization Policy Evaluator",
+  "description": "Evaluator of Binary Authorization Policy",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "binaryauthorization.platformPolicies.evaluatePolicy",
+    "binaryauthorization.platformPolicies.get",
+    "binaryauthorization.platformPolicies.list",
+    "binaryauthorization.policy.evaluatePolicy",
+    "binaryauthorization.policy.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

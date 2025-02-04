@@ -1,0 +1,14 @@
+{
+  "name": "roles/chroniclesm.viewer",
+  "title": "Chronicle Service Viewer",
+  "description": "Viewers can see Chronicle service details but not change them.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "chroniclesm.gcpAssociations.get",
+    "chroniclesm.gcpAssociations.list",
+    "chroniclesm.gcpLogFlowFilters.get",
+    "chroniclesm.gcpSettings.get"
+  ],
+  "stage": "GA"
+}

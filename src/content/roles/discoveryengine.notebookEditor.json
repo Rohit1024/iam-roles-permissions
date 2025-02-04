@@ -1,0 +1,9 @@
+{
+  "name": "roles/discoveryengine.notebookEditor",
+  "title": "Cloud NotebookLM Notebook Editor",
+  "description": "Grants read and write access to a Cloud NotebookLM Notebook.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [],
+  "stage": "BETA"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "roles/issuerswitch.rulesAdmin",
+  "title": "Issuerswitch Rules Admin",
+  "description": "Full access to issuer switch rules",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "issuerswitch.ruleMetadata.list",
+    "issuerswitch.ruleMetadataValues.create",
+    "issuerswitch.ruleMetadataValues.delete",
+    "issuerswitch.ruleMetadataValues.list",
+    "issuerswitch.rules.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/visionai.operatorViewer",
+  "title": "Vision AI Operator Viewer",
+  "description": "Access to read Vision AI Operators.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "visionai.operators.get",
+    "visionai.operators.list"
+  ],
+  "stage": "BETA"
+}

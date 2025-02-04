@@ -1,0 +1,26 @@
+{
+  "name": "roles/privilegedaccessmanager.admin",
+  "title": "Privileged Access Manager Admin",
+  "description": "Full access to Privileged Access Manager resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "privilegedaccessmanager.entitlements.create",
+    "privilegedaccessmanager.entitlements.delete",
+    "privilegedaccessmanager.entitlements.get",
+    "privilegedaccessmanager.entitlements.list",
+    "privilegedaccessmanager.entitlements.setIamPolicy",
+    "privilegedaccessmanager.entitlements.update",
+    "privilegedaccessmanager.grants.get",
+    "privilegedaccessmanager.grants.list",
+    "privilegedaccessmanager.grants.revoke",
+    "privilegedaccessmanager.locations.checkOnboardingStatus",
+    "privilegedaccessmanager.locations.get",
+    "privilegedaccessmanager.locations.list",
+    "privilegedaccessmanager.operations.delete",
+    "privilegedaccessmanager.operations.get",
+    "privilegedaccessmanager.operations.list",
+    "resourcemanager.projects.get"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "roles/cloudsupport.techSupportViewer",
+  "title": "Tech Support Viewer",
+  "description": "Read-only access to technical support cases (applicable for GCP Customer Care and Maps support).",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudsupport.properties.get",
+    "cloudsupport.techCases.get",
+    "cloudsupport.techCases.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "roles/containerregistry.ServiceAgent",
+  "title": "Container Registry Service Agent",
+  "description": "Access for Container Registry",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "pubsub.topics.publish",
+    "storage.objects.get",
+    "storage.objects.getIamPolicy",
+    "storage.objects.list"
+  ],
+  "stage": "GA"
+}

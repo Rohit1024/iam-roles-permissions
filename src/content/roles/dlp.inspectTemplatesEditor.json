@@ -1,0 +1,15 @@
+{
+  "name": "roles/dlp.inspectTemplatesEditor",
+  "title": "DLP Inspect Templates Editor",
+  "description": "Edit DLP inspect templates.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dlp.inspectTemplates.create",
+    "dlp.inspectTemplates.delete",
+    "dlp.inspectTemplates.get",
+    "dlp.inspectTemplates.list",
+    "dlp.inspectTemplates.update"
+  ],
+  "stage": "GA"
+}

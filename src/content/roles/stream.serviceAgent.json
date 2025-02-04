@@ -1,0 +1,17 @@
+{
+  "name": "roles/stream.serviceAgent",
+  "title": "Stream Service Agent",
+  "description": "Gives Immersive Stream for XR access to the required resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "storage.buckets.create",
+    "storage.buckets.get",
+    "storage.objects.create",
+    "storage.objects.get",
+    "storage.objects.list"
+  ],
+  "stage": "GA"
+}

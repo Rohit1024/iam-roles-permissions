@@ -1,0 +1,13 @@
+{
+  "name": "roles/securitycenter.resourceValueConfigsViewer",
+  "title": "Security Center Resource Value Configurations Viewer",
+  "description": "Read access to security center resource value configurations",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.tagValues.get",
+    "securitycenter.resourcevalueconfigs.get",
+    "securitycenter.resourcevalueconfigs.list"
+  ],
+  "stage": "GA"
+}

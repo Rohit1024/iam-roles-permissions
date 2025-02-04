@@ -1,0 +1,13 @@
+{
+  "name": "roles/cloudtasks.taskDeleter",
+  "title": "Cloud Tasks Task Deleter",
+  "description": "Access to delete tasks.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudtasks.tasks.delete",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

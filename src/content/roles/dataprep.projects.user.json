@@ -1,0 +1,15 @@
+{
+  "name": "roles/dataprep.projects.user",
+  "title": "Dataprep User",
+  "description": "Use of Dataprep.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dataprep.projects.use",
+    "resourcemanager.projects.get",
+    "serviceusage.quotas.get",
+    "serviceusage.services.get",
+    "serviceusage.services.list"
+  ],
+  "stage": "BETA"
+}

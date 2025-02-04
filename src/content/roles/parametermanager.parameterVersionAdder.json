@@ -1,0 +1,17 @@
+{
+  "name": "roles/parametermanager.parameterVersionAdder",
+  "title": "Parameter Manager Parameter Version Adder",
+  "description": "Grants create access to Parameter Manager ParameterVersion resources. Intended for users & applications that need to perform create operations on ParameterVersions only.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "parametermanager.locations.get",
+    "parametermanager.locations.list",
+    "parametermanager.parameterVersions.create",
+    "parametermanager.parameters.get",
+    "parametermanager.parameters.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

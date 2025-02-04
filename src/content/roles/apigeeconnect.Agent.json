@@ -1,0 +1,11 @@
+{
+  "name": "roles/apigeeconnect.Agent",
+  "title": "Apigee Connect Agent",
+  "description": "Ability to set up Apigee Connect agent between external clusters and Google.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "apigeeconnect.endpoints.connect"
+  ],
+  "stage": "GA"
+}

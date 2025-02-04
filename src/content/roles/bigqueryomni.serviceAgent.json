@@ -1,0 +1,12 @@
+{
+  "name": "roles/bigqueryomni.serviceAgent",
+  "title": "BigQuery Omni Service Agent",
+  "description": "Gives BigQuery Omni access to tables in user projects.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "bigquery.jobs.create",
+    "bigquery.tables.updateData"
+  ],
+  "stage": "GA"
+}

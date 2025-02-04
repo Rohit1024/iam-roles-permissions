@@ -1,0 +1,15 @@
+{
+  "name": "roles/accesscontextmanager.gcpAccessAdmin",
+  "title": "Cloud Access Binding Admin",
+  "description": "Create, edit, and change Cloud access bindings.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "accesscontextmanager.gcpUserAccessBindings.create",
+    "accesscontextmanager.gcpUserAccessBindings.delete",
+    "accesscontextmanager.gcpUserAccessBindings.get",
+    "accesscontextmanager.gcpUserAccessBindings.list",
+    "accesscontextmanager.gcpUserAccessBindings.update"
+  ],
+  "stage": "GA"
+}

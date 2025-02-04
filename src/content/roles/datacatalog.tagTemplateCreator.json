@@ -1,0 +1,13 @@
+{
+  "name": "roles/datacatalog.tagTemplateCreator",
+  "title": "Data Catalog TagTemplate Creator",
+  "description": "Access to create new tag templates",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "datacatalog.tagTemplates.create",
+    "datacatalog.tagTemplates.get",
+    "dataplex.projects.search"
+  ],
+  "stage": "GA"
+}

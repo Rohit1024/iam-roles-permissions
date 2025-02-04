@@ -1,0 +1,15 @@
+{
+  "name": "roles/dlp.storedInfoTypesEditor",
+  "title": "DLP Stored InfoTypes Editor",
+  "description": "Edit DLP stored info types.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dlp.storedInfoTypes.create",
+    "dlp.storedInfoTypes.delete",
+    "dlp.storedInfoTypes.get",
+    "dlp.storedInfoTypes.list",
+    "dlp.storedInfoTypes.update"
+  ],
+  "stage": "GA"
+}

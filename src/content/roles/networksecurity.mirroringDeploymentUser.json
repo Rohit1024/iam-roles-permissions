@@ -1,0 +1,13 @@
+{
+  "name": "roles/networksecurity.mirroringDeploymentUser",
+  "title": "Mirroring Deployment User",
+  "description": "Allows a consumer to connect their mirroringEndpointGroup to the Producer's mirroringDeploymentGroup.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "networksecurity.mirroringDeploymentGroups.get",
+    "networksecurity.mirroringDeploymentGroups.list",
+    "networksecurity.mirroringDeploymentGroups.use"
+  ],
+  "stage": "BETA"
+}

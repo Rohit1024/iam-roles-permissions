@@ -1,0 +1,15 @@
+{
+  "name": "roles/dialogflow.intentAdmin",
+  "title": "Dialogflow Intent Admin",
+  "description": "Can read & write intents.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dialogflow.intents.create",
+    "dialogflow.intents.delete",
+    "dialogflow.intents.get",
+    "dialogflow.intents.list",
+    "dialogflow.intents.update"
+  ],
+  "stage": "GA"
+}

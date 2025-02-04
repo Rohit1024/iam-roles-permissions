@@ -1,0 +1,13 @@
+{
+  "name": "roles/securesourcemanager.repoPullRequestApprover",
+  "title": "Secure Source Manager Repository Pull Request Approver",
+  "description": "An pull request approver can approve pull requests in a repository.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "securesourcemanager.repositories.approvePullRequests"
+  ],
+  "stage": "BETA"
+}

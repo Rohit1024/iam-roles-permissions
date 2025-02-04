@@ -1,0 +1,15 @@
+{
+  "name": "roles/visionai.operatorEditor",
+  "title": "Vision AI Operator Editor",
+  "description": "Access to read and write Vision AI Operators.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "visionai.operators.create",
+    "visionai.operators.delete",
+    "visionai.operators.get",
+    "visionai.operators.list",
+    "visionai.operators.update"
+  ],
+  "stage": "BETA"
+}

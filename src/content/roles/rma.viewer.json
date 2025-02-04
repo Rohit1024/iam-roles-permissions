@@ -1,0 +1,19 @@
+{
+  "name": "roles/rma.viewer",
+  "title": "Rapid Migration Assessment Viewer",
+  "description": "Read-only access to Rapid Migration Assessment all resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "rma.annotations.get",
+    "rma.collectors.get",
+    "rma.collectors.list",
+    "rma.locations.get",
+    "rma.locations.list",
+    "rma.operations.get",
+    "rma.operations.list"
+  ],
+  "stage": "GA"
+}

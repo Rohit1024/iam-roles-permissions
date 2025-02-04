@@ -1,0 +1,11 @@
+{
+  "name": "roles/cloudcontrolspartner.supportCaseServiceAgent",
+  "title": "Cloud Controls Partner Support Case Service Agent",
+  "description": "Gives the Partner Console service account access to support cases for workloads associated with a partner.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudsupport.techCases.get"
+  ],
+  "stage": "GA"
+}

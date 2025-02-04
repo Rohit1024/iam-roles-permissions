@@ -1,0 +1,17 @@
+{
+  "name": "roles/paymentsresellersubscription.subscriptionEditor",
+  "title": "Payments Reseller Subscriptions Editor",
+  "description": "Write access to Payments Reseller Subscription resource",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "paymentsresellersubscription.subscriptions.cancel",
+    "paymentsresellersubscription.subscriptions.extend",
+    "paymentsresellersubscription.subscriptions.get",
+    "paymentsresellersubscription.subscriptions.provision",
+    "paymentsresellersubscription.subscriptions.undoCancel",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

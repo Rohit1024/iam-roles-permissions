@@ -1,0 +1,11 @@
+{
+  "name": "roles/privateca.certificateRequester",
+  "title": "CA Service Certificate Requester",
+  "description": "Request certificates from CA Service.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "privateca.certificates.create"
+  ],
+  "stage": "GA"
+}

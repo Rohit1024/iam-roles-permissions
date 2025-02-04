@@ -1,0 +1,13 @@
+{
+  "name": "roles/networksecurity.interceptDeploymentUser",
+  "title": "Intercept Deployment User",
+  "description": "Allows a consumer to connect their interceptEndpointGroup to the Producer's interceptDeploymentGroup.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "networksecurity.interceptDeploymentGroups.get",
+    "networksecurity.interceptDeploymentGroups.list",
+    "networksecurity.interceptDeploymentGroups.use"
+  ],
+  "stage": "BETA"
+}

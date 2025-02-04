@@ -1,0 +1,14 @@
+{
+  "name": "roles/osconfig.guestPolicyViewer",
+  "title": "GuestPolicy Viewer",
+  "description": "Viewer of GuestPolicy resources",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "osconfig.guestPolicies.get",
+    "osconfig.guestPolicies.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

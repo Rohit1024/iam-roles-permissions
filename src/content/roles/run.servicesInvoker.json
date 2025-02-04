@@ -1,0 +1,11 @@
+{
+  "name": "roles/run.servicesInvoker",
+  "title": "Cloud Run Service Invoker",
+  "description": "Can invoke Cloud Run services.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "run.routes.invoke"
+  ],
+  "stage": "GA"
+}

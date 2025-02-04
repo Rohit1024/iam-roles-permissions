@@ -1,0 +1,13 @@
+{
+  "name": "roles/dataplex.discoveryServiceAgent",
+  "title": "Dataplex Discovery Service Agent",
+  "description": "Gives the Dataplex Discovery Service Agent bucket read permissions.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "storage.buckets.get",
+    "storage.objects.get",
+    "storage.objects.list"
+  ],
+  "stage": "GA"
+}

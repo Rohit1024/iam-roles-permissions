@@ -1,0 +1,18 @@
+{
+  "name": "roles/recommender.iampolicychangeriskViewer",
+  "title": "IAM Policy Change Risk Recommender Viewer",
+  "description": "Viewer of IAM Policy Change Risk Insights and Recommendations.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "recommender.iamPolicyChangeRiskInsights.get",
+    "recommender.iamPolicyChangeRiskInsights.list",
+    "recommender.iamPolicyChangeRiskRecommendations.get",
+    "recommender.iamPolicyChangeRiskRecommendations.list",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

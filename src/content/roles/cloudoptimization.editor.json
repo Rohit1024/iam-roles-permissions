@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloudoptimization.editor",
+  "title": "Cloud Optimization AI Editor",
+  "description": "Editor of Cloud Optimization AI resources",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudoptimization.operations.create",
+    "cloudoptimization.operations.get"
+  ],
+  "stage": "GA"
+}

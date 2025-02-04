@@ -1,0 +1,18 @@
+{
+  "name": "roles/connectors.customConnectorViewer",
+  "title": "Custom Connector Viewer",
+  "description": "Custom Connector  is a global resource which creates custom connector within the given target project. This role grants Read-only access to Custom Connector & Custom Connector Version resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "connectors.customConnectorVersions.get",
+    "connectors.customConnectorVersions.getIamPolicy",
+    "connectors.customConnectorVersions.list",
+    "connectors.customConnectors.get",
+    "connectors.customConnectors.getIamPolicy",
+    "connectors.customConnectors.list",
+    "connectors.locations.get",
+    "connectors.locations.list"
+  ],
+  "stage": "GA"
+}

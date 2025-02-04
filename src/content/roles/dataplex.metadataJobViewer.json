@@ -1,0 +1,15 @@
+{
+  "name": "roles/dataplex.metadataJobViewer",
+  "title": "Dataplex Metadata Job Viewer",
+  "description": "Read access to Metadata Job resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dataplex.metadataJobs.get",
+    "dataplex.metadataJobs.list",
+    "dataplex.operations.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

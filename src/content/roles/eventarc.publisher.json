@@ -1,0 +1,15 @@
+{
+  "name": "roles/eventarc.publisher",
+  "title": "Eventarc Publisher",
+  "description": "Can publish events to Eventarc channels.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "eventarc.channels.get",
+    "eventarc.channels.list",
+    "eventarc.channels.publish",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

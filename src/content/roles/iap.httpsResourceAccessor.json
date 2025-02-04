@@ -1,0 +1,11 @@
+{
+  "name": "roles/iap.httpsResourceAccessor",
+  "title": "IAP-secured Web App User",
+  "description": "Access HTTPS resources which use Identity-Aware Proxy",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "iap.webServiceVersions.accessViaIAP"
+  ],
+  "stage": "GA"
+}

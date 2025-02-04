@@ -1,0 +1,15 @@
+{
+  "name": "roles/workloadmanager.workloadViewer",
+  "title": "Workload Manager Workload Viewer",
+  "description": "The role used to view the workload related data.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "workloadmanager.discoveredprofiles.get",
+    "workloadmanager.discoveredprofiles.getHealth",
+    "workloadmanager.discoveredprofiles.list"
+  ],
+  "stage": "BETA"
+}

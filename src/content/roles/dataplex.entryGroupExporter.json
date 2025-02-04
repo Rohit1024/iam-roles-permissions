@@ -1,0 +1,14 @@
+{
+  "name": "roles/dataplex.entryGroupExporter",
+  "title": "Dataplex Entry Group Exporter",
+  "description": "Grants access to export this entry group for Metadata Job processing.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dataplex.entryGroups.export",
+    "dataplex.entryGroups.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}
