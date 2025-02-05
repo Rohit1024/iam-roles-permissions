@@ -9,7 +9,7 @@ import node from '@astrojs/node';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "http://localhost:4321",
+  site: import.meta.env.SITE_URL ?? "http://localhost:4321",
   integrations: [tailwind({
     applyBaseStyles: false,
   }), , react()],
