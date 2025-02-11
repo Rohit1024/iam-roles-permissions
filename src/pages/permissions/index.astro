@@ -1,19 +1,14 @@
 ---
 import { getCollection } from "astro:content";
-import PermissionsPage from "@/components/react/PermissionsPage";
 import Layout from "@/layouts/BaseLayout.astro";
+import PermissionsPage from "@/components/react/PermissionsPage";
 
 const roles = await getCollection("roles");
-const uniquePermissions = new Set<string>();
+const uniquePermissions = roles.reduce((acc, role) => {
+  role.data.included_permissions.forEach((permission) => acc.add(permission));
+  return acc;
+}, new Set<string>());
 
-// Collect all unique permissions
-roles.forEach((role) => {
-  role.data.included_permissions.forEach((permission) => {
-    uniquePermissions.add(permission);
-  });
-});
-
-// Convert to array and sort
 const permissions = Array.from(uniquePermissions).sort();
 ---
 

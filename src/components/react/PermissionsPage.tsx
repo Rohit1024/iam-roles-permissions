@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Search } from "lucide-react";
 import type { CollectionEntry } from "astro:content";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { useDebounce } from "@/hooks/use-debounce";
 
 interface PermissionsPageProps {
   initialPermissions: string[];
@@ -18,20 +19,30 @@ const PermissionsPage: React.FC<PermissionsPageProps> = ({
 }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredPermissions = useMemo(() => {
-    if (!searchTerm) return initialPermissions;
+  const debouncedSearchTerm = useDebounce(searchTerm, 300); // Debounce with 300ms delay
 
-    const lowercaseSearch = searchTerm.toLowerCase();
+  // 1. Pre-calculate role counts:  This is the KEY optimization
+  const permissionRoleCounts = useMemo(() => {
+    const counts: { [permission: string]: number } = {};
+    initialPermissions.forEach((permission) => (counts[permission] = 0)); // Initialize all counts to zero.
+    roles.forEach((role) => {
+      role.data.included_permissions.forEach((permission) => {
+        if (counts[permission] !== undefined) {
+          // Check if permission is in the initial list.
+          counts[permission]++;
+        }
+      });
+    });
+    return counts;
+  }, [roles, initialPermissions]);
+
+  const filteredPermissions = useMemo(() => {
+    if (!debouncedSearchTerm) return initialPermissions;
+    const lowercaseSearch = debouncedSearchTerm.toLowerCase();
     return initialPermissions.filter((permission) =>
       permission.toLowerCase().includes(lowercaseSearch)
     );
-  }, [searchTerm, initialPermissions]);
-
-  const getPermissionRoleCount = (permission: string) => {
-    return roles.filter((role) =>
-      role.data.included_permissions.includes(permission)
-    ).length;
-  };
+  }, [debouncedSearchTerm, initialPermissions]);
 
   return (
     <main className="flex-1 container mx-auto px-4 pt-2">
@@ -72,7 +83,8 @@ const PermissionsPage: React.FC<PermissionsPageProps> = ({
                 >
                   {permission}
                 </a>
-                <Badge>{getPermissionRoleCount(permission)} roles</Badge>
+                <Badge>{permissionRoleCounts[permission] || 0} roles</Badge>{" "}
+                {/* Access pre-calculated count */}
               </div>
             ))}
           </ScrollArea>
