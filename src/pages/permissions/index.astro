@@ -4,14 +4,17 @@ import Layout from "@/layouts/BaseLayout.astro";
 import PermissionsPage from "@/components/react/PermissionsPage";
 
 const roles = await getCollection("roles");
-const uniquePermissions = roles.reduce((acc, role) => {
-  role.data.included_permissions.forEach((permission) => acc.add(permission));
-  return acc;
-}, new Set<string>());
+const uniquePermissions = new Set<string>();
 
-const permissions = Array.from(uniquePermissions).sort();
+for (const role of roles) {
+  for (const permission of role.data.included_permissions) {
+    uniquePermissions.add(permission);
+  }
+}
+
+const permissions = [...uniquePermissions].sort();
 ---
 
 <Layout title="IAM | Permissions" transition:persist>
-  <PermissionsPage client:load initialPermissions={permissions} roles={roles} />
+  <PermissionsPage client:idle initialPermissions={permissions} roles={roles} />
 </Layout>

@@ -5,6 +5,7 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "apigee.addonsconfig.get",
     "apigee.datacollectors.get",
     "apigee.datacollectors.list",
     "apigee.datastores.get",

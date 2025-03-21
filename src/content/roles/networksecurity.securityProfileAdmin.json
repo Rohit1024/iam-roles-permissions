@@ -5,6 +5,8 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "networksecurity.operations.get",
+    "networksecurity.operations.list",
     "networksecurity.securityProfileGroups.create",
     "networksecurity.securityProfileGroups.delete",
     "networksecurity.securityProfileGroups.get",

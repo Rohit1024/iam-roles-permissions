@@ -5,6 +5,7 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "dataproc.batches.sparkApplicationWrite",
     "dataproc.sessions.sparkApplicationRead",
     "dataproc.sessions.sparkApplicationWrite",
     "dataprocrm.nodePools.create",

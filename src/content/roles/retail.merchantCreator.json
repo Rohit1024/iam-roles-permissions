@@ -5,12 +5,14 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "retail.attributesConfigs.get",
     "retail.merchantControls.creatorCreate",
     "retail.merchantControls.creatorDelete",
     "retail.merchantControls.creatorGet",
     "retail.merchantControls.creatorList",
     "retail.merchantControls.creatorSubmit",
-    "retail.merchantControls.creatorUpdate"
+    "retail.merchantControls.creatorUpdate",
+    "retail.servingConfigs.search"
   ],
   "stage": "BETA"
 }

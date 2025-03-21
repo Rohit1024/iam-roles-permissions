@@ -5,6 +5,10 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "dataform.commentThreads.get",
+    "dataform.commentThreads.list",
+    "dataform.comments.get",
+    "dataform.comments.list",
     "dataform.compilationResults.create",
     "dataform.compilationResults.get",
     "dataform.compilationResults.list",

@@ -5,6 +5,7 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "container.clusters.connect",
     "iam.serviceAccounts.get",
     "iam.serviceAccounts.getAccessToken",
     "iam.serviceAccounts.getOpenIdToken",

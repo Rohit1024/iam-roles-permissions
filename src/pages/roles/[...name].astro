@@ -9,7 +9,7 @@ export async function getStaticPaths() {
   const roles = await getCollection("roles");
   return roles.map((role) => ({
     params: { name: role.id },
-    props: { role: role },
+    props: { role },
   }));
 }
 
@@ -19,7 +19,7 @@ const { role } = Astro.props;
 <Layout
   title={`Role : ${role.data.name}`}
   description={role.data.description}
-  transition:persist
+  transition:animate="slide"
 >
-  <RoleDetailPage client:load role={role} />
+  <RoleDetailPage client:idle role={role} />
 </Layout>

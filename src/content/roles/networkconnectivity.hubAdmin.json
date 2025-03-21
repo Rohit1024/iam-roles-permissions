@@ -6,10 +6,12 @@
   "deleted": false,
   "included_permissions": [
     "networkconnectivity.groups.acceptSpoke",
+    "networkconnectivity.groups.acceptSpokeUpdate",
     "networkconnectivity.groups.get",
     "networkconnectivity.groups.getIamPolicy",
     "networkconnectivity.groups.list",
     "networkconnectivity.groups.rejectSpoke",
+    "networkconnectivity.groups.rejectSpokeUpdate",
     "networkconnectivity.groups.setIamPolicy",
     "networkconnectivity.groups.use",
     "networkconnectivity.hubRouteTables.get",

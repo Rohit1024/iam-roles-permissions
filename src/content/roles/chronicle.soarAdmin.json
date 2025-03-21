@@ -5,6 +5,7 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "chronicle.cases.countPriorities",
     "chronicle.instances.soarAdmin",
     "cloudasset.assets.exportResource",
     "cloudasset.assets.queryAccessPolicy",

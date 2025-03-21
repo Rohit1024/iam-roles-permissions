@@ -5,6 +5,11 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "cloudkms.keyHandles.create",
+    "cloudkms.keyHandles.get",
+    "cloudkms.keyHandles.list",
+    "cloudkms.operations.get",
+    "cloudkms.projects.showEffectiveAutokeyConfig",
     "compute.networks.list",
     "networkconnectivity.serviceConnectionPolicies.list",
     "redis.backupCollections.create",

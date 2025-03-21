@@ -5,6 +5,7 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "cloudfunctions.functions.invoke",
     "recaptchaenterprise.assessments.create",
     "recaptchaenterprise.keys.create",
     "recaptchaenterprise.keys.delete",

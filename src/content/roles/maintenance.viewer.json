@@ -1,0 +1,16 @@
+{
+  "name": "roles/maintenance.viewer",
+  "title": "Maintenance API Viewer",
+  "description": "Readonly access to Maintenance API resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "maintenance.locations.get",
+    "maintenance.locations.list",
+    "maintenance.resourceMaintenances.get",
+    "maintenance.resourceMaintenances.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

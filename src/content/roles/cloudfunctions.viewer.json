@@ -7,6 +7,8 @@
   "included_permissions": [
     "cloudbuild.builds.get",
     "cloudbuild.builds.list",
+    "cloudbuild.locations.get",
+    "cloudbuild.locations.list",
     "cloudbuild.operations.get",
     "cloudbuild.operations.list",
     "cloudfunctions.functions.get",
@@ -28,6 +30,9 @@
     "eventarc.googleApiSources.getIamPolicy",
     "eventarc.googleApiSources.list",
     "eventarc.googleChannelConfigs.get",
+    "eventarc.kafkaSources.get",
+    "eventarc.kafkaSources.getIamPolicy",
+    "eventarc.kafkaSources.list",
     "eventarc.locations.get",
     "eventarc.locations.list",
     "eventarc.messageBuses.get",

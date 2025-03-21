@@ -7,5 +7,5 @@
   "included_permissions": [
     "telemetry.traces.write"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

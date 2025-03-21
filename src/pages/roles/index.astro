@@ -7,5 +7,5 @@ const roles = await getCollection("roles");
 ---
 
 <Layout title="IAM | Roles" transition:persist>
-  <RolesPage client:load initialRoles={roles} />
+  <RolesPage client:idle initialRoles={roles} />
 </Layout>

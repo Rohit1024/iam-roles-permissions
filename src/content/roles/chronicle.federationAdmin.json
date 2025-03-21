@@ -1,0 +1,12 @@
+{
+  "name": "roles/chronicle.federationAdmin",
+  "title": "Chronicle API Federation Admin",
+  "description": "Full access to Chronicle Federation features.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": ""
+}

@@ -16,5 +16,5 @@
     "workspacemarketplace.appConfiguration.update",
     "workspacemarketplace.appConfiguration.view"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

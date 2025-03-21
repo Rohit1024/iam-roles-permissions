@@ -1,7 +1,7 @@
 {
   "name": "roles/datacatalog.tagTemplateOwner",
   "title": "Data Catalog TagTemplate Owner",
-  "description": "Full acess to tag templates",
+  "description": "Full access to tag templates",
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [

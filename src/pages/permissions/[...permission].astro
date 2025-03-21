@@ -5,22 +5,25 @@ import Layout from "@/layouts/BaseLayout.astro";
 
 export async function getStaticPaths() {
   const roles = await getCollection("roles");
-  const permissions = new Set();
-
-  // Collect all unique permissions
-  roles.forEach((role) => {
-    role.data.included_permissions.forEach((permission) => {
+  const permissions = new Set<string>();
+  const permissionToRoles = new Map<string, typeof roles>();
+  
+  for (const role of roles) {
+    for (const permission of role.data.included_permissions) {
       permissions.add(permission);
-    });
-  });
-
-  return Array.from(permissions).map((permission) => ({
+      
+      if (!permissionToRoles.has(permission)) {
+        permissionToRoles.set(permission, []);
+      }
+      permissionToRoles.get(permission)?.push(role);
+    }
+  }
+  
+  return [...permissions].map((permission) => ({
     params: { permission },
     props: {
       permission,
-      roles: roles.filter((role) =>
-        role.data.included_permissions.includes(permission as string)
-      ),
+      roles: permissionToRoles.get(permission) || [],
     },
   }));
 }
@@ -28,6 +31,6 @@ export async function getStaticPaths() {
 const { permission, roles } = Astro.props;
 ---
 
-<Layout title={`Permission : ${permission}`} transition:persist>
-  <PermissionDetailPage client:load permission={permission} roles={roles} />
+<Layout title={`Permission : ${permission}`} transition:animate="slide">
+  <PermissionDetailPage client:idle permission={permission} roles={roles} />
 </Layout>

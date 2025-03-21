@@ -6,6 +6,7 @@
   "deleted": false,
   "included_permissions": [
     "cloudaicompanion.entitlements.get",
+    "cloudsql.backupRuns.export",
     "cloudsql.backupRuns.get",
     "cloudsql.backupRuns.list",
     "cloudsql.databases.get",

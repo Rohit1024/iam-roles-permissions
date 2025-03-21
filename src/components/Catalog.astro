@@ -12,10 +12,16 @@ import Link from "./Link.astro";
 
 const allRoles = await getCollection("roles");
 
-// Create a Set of unique permissions across all roles
-const uniquePermissions = new Set(
-  allRoles.flatMap((role) => role.data.included_permissions)
-);
+// Use a Set from the beginning to track unique permissions
+const uniquePermissions = new Set();
+
+// Iterate through roles and add each permission directly to the Set
+for (const role of allRoles) {
+  for (const permission of role.data.included_permissions) {
+    uniquePermissions.add(permission);
+  }
+}
+
 const uniquePermissionsCount = uniquePermissions.size;
 ---
 

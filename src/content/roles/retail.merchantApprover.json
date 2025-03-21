@@ -5,6 +5,7 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "retail.attributesConfigs.get",
     "retail.merchantControls.approverDelete",
     "retail.merchantControls.approverGet",
     "retail.merchantControls.approverList",
@@ -14,7 +15,9 @@
     "retail.merchantControls.creatorGet",
     "retail.merchantControls.creatorList",
     "retail.merchantControls.creatorSubmit",
-    "retail.merchantControls.creatorUpdate"
+    "retail.merchantControls.creatorUpdate",
+    "retail.servingConfigs.list",
+    "retail.servingConfigs.search"
   ],
   "stage": "BETA"
 }
