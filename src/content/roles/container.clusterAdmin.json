@@ -5,6 +5,7 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "container.clusters.connect",
     "container.clusters.create",
     "container.clusters.delete",
     "container.clusters.get",

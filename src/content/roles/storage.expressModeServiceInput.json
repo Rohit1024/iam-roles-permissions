@@ -10,5 +10,5 @@
     "storage.objects.list",
     "storage.objects.update"
   ],
-  "stage": ""
+  "stage": "BETA"
 }
