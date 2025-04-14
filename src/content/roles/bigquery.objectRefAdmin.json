@@ -4,6 +4,9 @@
   "description": "Administer ObjectRef resources that includes read and write permissions",
   "etag": "AA==",
   "deleted": false,
-  "included_permissions": [],
-  "stage": ""
+  "included_permissions": [
+    "bigquery.objectRefs.read",
+    "bigquery.objectRefs.write"
+  ],
+  "stage": "GA"
 }

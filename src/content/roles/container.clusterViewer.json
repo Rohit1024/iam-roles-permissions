@@ -5,6 +5,7 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "container.clusters.connect",
     "container.clusters.get",
     "container.clusters.list",
     "resourcemanager.projects.get",

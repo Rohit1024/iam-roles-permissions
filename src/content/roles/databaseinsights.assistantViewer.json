@@ -4,6 +4,9 @@
   "description": "Viewer role for Database Insights assistant data",
   "etag": "AA==",
   "deleted": false,
-  "included_permissions": [],
-  "stage": ""
+  "included_permissions": [
+    "databaseinsights.performanceIssues.detect",
+    "databaseinsights.performanceIssues.investigate"
+  ],
+  "stage": "BETA"
 }

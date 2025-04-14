@@ -1,0 +1,13 @@
+{
+  "name": "roles/billing.projectCostsManager",
+  "title": "Project Billing Costs Manager",
+  "description": "Can interact with billing information scoped to the projects to which the user has cost access.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "billing.accounts.getIamPolicy",
+    "billing.accounts.getSpendingInformationScoped",
+    "billing.costRecommendations.listScoped"
+  ],
+  "stage": "GA"
+}

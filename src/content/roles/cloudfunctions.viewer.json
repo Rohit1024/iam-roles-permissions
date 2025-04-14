@@ -5,6 +5,7 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "cloudasset.assets.searchAllResources",
     "cloudbuild.builds.get",
     "cloudbuild.builds.list",
     "cloudbuild.locations.get",

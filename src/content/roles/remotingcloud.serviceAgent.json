@@ -5,6 +5,8 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "compute.instanceSettings.get",
+    "compute.instances.get",
     "compute.projects.get"
   ],
   "stage": "GA"

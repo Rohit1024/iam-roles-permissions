@@ -8,5 +8,5 @@
     "storage.buckets.get",
     "storage.buckets.list"
   ],
-  "stage": ""
+  "stage": "BETA"
 }

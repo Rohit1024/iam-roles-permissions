@@ -10,6 +10,7 @@
     "orgpolicy.constraints.list",
     "orgpolicy.policies.list",
     "orgpolicy.policy.get",
+    "resourcemanager.capabilities.get",
     "resourcemanager.folders.get",
     "resourcemanager.folders.list",
     "resourcemanager.projects.get",

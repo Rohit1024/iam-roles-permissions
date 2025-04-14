@@ -14,6 +14,7 @@
     "aiplatform.endpoints.predict",
     "aiplatform.endpoints.undeploy",
     "aiplatform.endpoints.update",
+    "aiplatform.sessions.get",
     "cloudtrace.traces.patch",
     "logging.logEntries.create",
     "logging.logEntries.route",
