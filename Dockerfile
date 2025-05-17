@@ -1,12 +1,12 @@
-FROM node:22-alpine AS runtime
+FROM oven/bun:alpine
 WORKDIR /app
 
 COPY . .
 
-RUN npm install
-RUN npm run build
+RUN bun install
+RUN bun run build
 
 ENV HOST=0.0.0.0
 ENV PORT=8080
 EXPOSE 8080
-CMD node ./dist/server/entry.mjs
+CMD bun run ./dist/server/entry.mjs
