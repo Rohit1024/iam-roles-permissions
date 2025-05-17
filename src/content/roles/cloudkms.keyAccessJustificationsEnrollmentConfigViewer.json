@@ -1,0 +1,9 @@
+{
+  "name": "roles/cloudkms.keyAccessJustificationsEnrollmentConfigViewer",
+  "title": "Key Access Justifications Enrollment Viewer",
+  "description": "Grant ability to view Key Access Justification enrollment configs of a project.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [],
+  "stage": ""
+}

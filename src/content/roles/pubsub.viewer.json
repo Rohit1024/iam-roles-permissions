@@ -5,6 +5,7 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "pubsub.messageTransforms.validate",
     "pubsub.schemas.get",
     "pubsub.schemas.list",
     "pubsub.schemas.listRevisions",

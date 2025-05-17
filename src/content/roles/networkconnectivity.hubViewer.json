@@ -5,6 +5,8 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "networkconnectivity.gatewayAdvertisedRoutes.get",
+    "networkconnectivity.gatewayAdvertisedRoutes.list",
     "networkconnectivity.groups.get",
     "networkconnectivity.groups.getIamPolicy",
     "networkconnectivity.groups.list",

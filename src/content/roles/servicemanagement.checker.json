@@ -1,0 +1,11 @@
+{
+  "name": "roles/servicemanagement.checker",
+  "title": "Service Checker",
+  "description": "Can check admission of a service during runtime.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "servicemanagement.services.check"
+  ],
+  "stage": "GA"
+}

@@ -5,7 +5,11 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
-    "aiplatform.endpoints.predict"
+    "aiplatform.endpoints.predict",
+    "logging.logEntries.create",
+    "logging.logEntries.route",
+    "telemetry.metrics.write",
+    "telemetry.traces.write"
   ],
   "stage": "GA"
 }

@@ -61,5 +61,5 @@
     "cloudaicompanion.settingBindings.releaseChannelSettingsUpdate",
     "cloudaicompanion.settingBindings.releaseChannelSettingsUse"
   ],
-  "stage": "BETA"
+  "stage": "GA"
 }

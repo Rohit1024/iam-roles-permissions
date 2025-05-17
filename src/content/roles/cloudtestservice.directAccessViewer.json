@@ -7,6 +7,9 @@
   "included_permissions": [
     "cloudtestservice.devicesession.get",
     "cloudtestservice.devicesession.list",
+    "cloudtestservice.environmentcatalog.get",
+    "devicestreaming.deviceSessions.get",
+    "devicestreaming.deviceSessions.list",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],

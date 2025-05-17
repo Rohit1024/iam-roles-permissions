@@ -1,0 +1,13 @@
+{
+  "name": "roles/firebasevertexai.viewer",
+  "title": "Firebase AI Logic Viewer",
+  "description": "Read access to Firebase AI Logic resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "firebasevertexai.configs.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

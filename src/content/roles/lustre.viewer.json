@@ -1,0 +1,18 @@
+{
+  "name": "roles/lustre.viewer",
+  "title": "Google Cloud Managed Lustre Viewer",
+  "description": "Readonly access to Google Cloud Managed Lustre resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "lustre.instances.get",
+    "lustre.instances.list",
+    "lustre.locations.get",
+    "lustre.locations.list",
+    "lustre.operations.get",
+    "lustre.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

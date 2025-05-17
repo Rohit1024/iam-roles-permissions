@@ -5,6 +5,9 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "discoveryengine.accounts.create",
+    "discoveryengine.notebooks.create",
+    "discoveryengine.notebooks.list",
     "resourcemanager.projects.get",
     "resourcemanager.projects.list"
   ],

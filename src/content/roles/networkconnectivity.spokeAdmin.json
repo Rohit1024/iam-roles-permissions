@@ -5,6 +5,11 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "networkconnectivity.gatewayAdvertisedRoutes.create",
+    "networkconnectivity.gatewayAdvertisedRoutes.delete",
+    "networkconnectivity.gatewayAdvertisedRoutes.get",
+    "networkconnectivity.gatewayAdvertisedRoutes.list",
+    "networkconnectivity.gatewayAdvertisedRoutes.update",
     "networkconnectivity.hubRouteTables.get",
     "networkconnectivity.hubRouteTables.getIamPolicy",
     "networkconnectivity.hubRouteTables.list",
