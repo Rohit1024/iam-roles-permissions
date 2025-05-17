@@ -1,25 +1,24 @@
 steps:
-  # Run the generate script to create static JSON files using the Bun image
-  - name: 'Run Generate Script'
-    image: 'oven/bun:alpine'
-    workingDirectory: '/workspace'
+  # Step : 0 : Run the generate script to create static JSON files using the Bun image
+  - name: 'oven/bun:alpine'
     entrypoint: 'bun'
     args: ['run', 'generate.ts', '--crawl']
+    id: 'generate'
 
-  # Build the Docker image using the standard Node.js image
-  - name: 'Build Docker Image'
-    image: 'gcr.io/cloud-builders/docker'
-    workingDirectory: '/workspace'
+  # Step : 1 : Build the Docker image using the standard Node.js image
+  - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/astro-app:$SHORT_SHA', '.']
+    id: 'build-image'
+    waitFor: ['generate']
 
-  # Push the Docker image to Google Container Registry
-  - name: 'Push Docker Image'
-    image: 'gcr.io/cloud-builders/docker'
+  # Step : 2 : Push the Docker image to Google Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/$PROJECT_ID/astro-app:$SHORT_SHA']
+    id: 'push-image'
+    waitFor: ['build-image']
 
-  # Deploy the Docker image to Cloud Run
-  - name: 'Deploy to Cloud Run'
-    image: 'gcr.io/google-cloud-sdk'
+  # Step : 3 : Deploy the Docker image to Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: 'gcloud'
     args:
       - 'run'
@@ -38,6 +37,7 @@ steps:
       - '1'
       - '--memory'
       - '1024Mi'
+    waitFor: ['push-image']
 
 images:
   - 'gcr.io/$PROJECT_ID/astro-app:$SHORT_SHA'
