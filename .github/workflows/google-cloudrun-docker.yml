@@ -45,7 +45,7 @@ jobs:
         uses: "docker/login-action@v3"
         with:
           username: "oauth2accesstoken"
-          password: "${{ steps.sdk-auth.outputs.auth_token }}"
+          password: "${{ steps.sdk-auth.outputs.access_token }}"
           registry: "${{ env.REGION }}-docker.pkg.dev"
 
       - id: "docker-build"
