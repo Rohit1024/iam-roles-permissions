@@ -1,0 +1,14 @@
+{
+  "name": "roles/osconfig.patchJobViewer",
+  "title": "Patch Job Viewer",
+  "description": "Get and list Patch Jobs.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "osconfig.patchJobs.get",
+    "osconfig.patchJobs.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "roles/automl.predictor",
+  "title": "AutoML Predictor",
+  "description": "Predict using models",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "automl.models.predict",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

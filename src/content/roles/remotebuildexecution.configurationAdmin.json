@@ -1,0 +1,20 @@
+{
+  "name": "roles/remotebuildexecution.configurationAdmin",
+  "title": "Remote Build Execution Configuration Admin",
+  "description": "Remote Build Execution Configuration Admin",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "remotebuildexecution.instances.create",
+    "remotebuildexecution.instances.delete",
+    "remotebuildexecution.instances.get",
+    "remotebuildexecution.instances.list",
+    "remotebuildexecution.instances.update",
+    "remotebuildexecution.workerpools.create",
+    "remotebuildexecution.workerpools.delete",
+    "remotebuildexecution.workerpools.get",
+    "remotebuildexecution.workerpools.list",
+    "remotebuildexecution.workerpools.update"
+  ],
+  "stage": "BETA"
+}

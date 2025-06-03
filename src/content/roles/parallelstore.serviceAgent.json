@@ -1,0 +1,12 @@
+{
+  "name": "roles/parallelstore.serviceAgent",
+  "title": "Parallelstore Service Agent",
+  "description": "Gives the Parallelstore service agent ability to access customer resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

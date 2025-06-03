@@ -1,0 +1,11 @@
+{
+  "name": "roles/cloudsql.serviceAgent",
+  "title": "Cloud SQL Service Agent",
+  "description": "Grants Cloud SQL access to services and APIs in the user project",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudsql.instances.get"
+  ],
+  "stage": "GA"
+}

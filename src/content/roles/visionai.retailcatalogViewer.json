@@ -1,0 +1,9 @@
+{
+  "name": "roles/visionai.retailcatalogViewer",
+  "title": "Vision AI RetailCatalog Viewer",
+  "description": "Access to read Vision AI RetailCatalogs.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [],
+  "stage": "BETA"
+}

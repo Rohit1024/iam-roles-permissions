@@ -1,0 +1,11 @@
+{
+  "name": "roles/firebasedataconnect.dataViewer",
+  "title": "Firebase Data Connect API Data Viewer",
+  "description": "Readonly access to data sources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "firebasedataconnect.services.executeGraphqlRead"
+  ],
+  "stage": "BETA"
+}

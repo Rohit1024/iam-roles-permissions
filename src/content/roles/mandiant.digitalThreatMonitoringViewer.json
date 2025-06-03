@@ -1,0 +1,14 @@
+{
+  "name": "roles/mandiant.digitalThreatMonitoringViewer",
+  "title": "Mandiant Digital Threat Monitoring Viewer",
+  "description": "Access to read Digital Threat Monitoring",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "mandiant.genericDigitalThreatMonitorings.get",
+    "mandiant.genericPlatforms.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

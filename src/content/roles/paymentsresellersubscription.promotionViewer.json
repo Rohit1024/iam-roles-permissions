@@ -1,0 +1,13 @@
+{
+  "name": "roles/paymentsresellersubscription.promotionViewer",
+  "title": "Payments Reseller Promotions Viewer",
+  "description": "Read access to Payments Reseller Promotion resource",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "paymentsresellersubscription.promotions.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

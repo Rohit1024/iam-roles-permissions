@@ -1,0 +1,12 @@
+{
+  "name": "roles/visionai.assetCreator",
+  "title": "VisionAI Warehouse Asset Creator",
+  "description": "Grants access to ingest media assets into the Warehouse.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "visionai.assets.create",
+    "visionai.assets.ingest"
+  ],
+  "stage": "BETA"
+}

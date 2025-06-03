@@ -1,0 +1,20 @@
+{
+  "name": "roles/recommender.cloudDeprecationRecommendationAdmin",
+  "title": "Cloud Deprecation General Recommender Admin",
+  "description": "Admin of Cloud Deprecation General Recommender Insights and Recommendations.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "recommender.cloudDeprecationGeneralInsights.get",
+    "recommender.cloudDeprecationGeneralInsights.list",
+    "recommender.cloudDeprecationGeneralInsights.update",
+    "recommender.cloudDeprecationGeneralRecommendations.get",
+    "recommender.cloudDeprecationGeneralRecommendations.list",
+    "recommender.cloudDeprecationGeneralRecommendations.update",
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

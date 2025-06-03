@@ -1,0 +1,12 @@
+{
+  "name": "roles/monitoring.uptimeCheckConfigViewer",
+  "title": "Monitoring Uptime Check Configuration Viewer",
+  "description": "Read-only access to uptime check configurations.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "monitoring.uptimeCheckConfigs.get",
+    "monitoring.uptimeCheckConfigs.list"
+  ],
+  "stage": "BETA"
+}

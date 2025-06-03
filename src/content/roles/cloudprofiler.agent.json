@@ -1,0 +1,12 @@
+{
+  "name": "roles/cloudprofiler.agent",
+  "title": "Cloud Profiler Agent",
+  "description": "Cloud Profiler agents are allowed to register and provide the profiling data.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudprofiler.profiles.create",
+    "cloudprofiler.profiles.update"
+  ],
+  "stage": "GA"
+}

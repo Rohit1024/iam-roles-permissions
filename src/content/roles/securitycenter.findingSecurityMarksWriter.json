@@ -1,0 +1,12 @@
+{
+  "name": "roles/securitycenter.findingSecurityMarksWriter",
+  "title": "Security Center Finding Security Marks Writer",
+  "description": "Write access to finding security marks",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "securitycenter.findingsecuritymarks.update",
+    "securitycenter.userinterfacemetadata.get"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "roles/cloudbuild.workerPoolUser",
+  "title": "Cloud Build WorkerPool User",
+  "description": "Can run builds in the WorkerPool",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudbuild.workerpools.use"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "roles/issuerswitch.accountManagerTransactionsViewer",
+  "title": "Issuerswitch Account Manager Transactions Viewer",
+  "description": "This role can view all account manager transactions",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "issuerswitch.accountManagerTransactions.list",
+    "issuerswitch.operations.get",
+    "issuerswitch.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

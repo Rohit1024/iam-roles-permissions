@@ -1,0 +1,12 @@
+{
+  "name": "roles/dataprocessing.dataSourceManager",
+  "title": "Data Processing Controls Data Source Manager",
+  "description": "Data processing controls data source manager who can get, list, and update the underlying data.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dataprocessing.datasources.list",
+    "dataprocessing.datasources.update"
+  ],
+  "stage": "GA"
+}

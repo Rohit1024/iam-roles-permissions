@@ -1,0 +1,11 @@
+{
+  "name": "roles/autoscaling.recommendationsReader",
+  "title": "Autoscaling Recommendations Reader",
+  "description": "Access to read recommendations from autoscaling site",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "autoscaling.sites.readRecommendations"
+  ],
+  "stage": "BETA"
+}

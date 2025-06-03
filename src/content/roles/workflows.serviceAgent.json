@@ -1,0 +1,15 @@
+{
+  "name": "roles/workflows.serviceAgent",
+  "title": "Cloud Workflows Service Agent",
+  "description": "Gives Cloud Workflows service account access to managed resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "container.clusters.connect",
+    "iam.serviceAccounts.get",
+    "iam.serviceAccounts.getAccessToken",
+    "iam.serviceAccounts.getOpenIdToken",
+    "serviceusage.services.use"
+  ],
+  "stage": "GA"
+}

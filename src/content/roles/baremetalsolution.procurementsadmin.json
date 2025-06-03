@@ -1,0 +1,15 @@
+{
+  "name": "roles/baremetalsolution.procurementsadmin",
+  "title": "Bare Metal Solution Procurements Admin",
+  "description": "Administrator of Bare Metal Solution Procurements",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "baremetalsolution.pods.list",
+    "baremetalsolution.procurements.create",
+    "baremetalsolution.procurements.get",
+    "baremetalsolution.procurements.list",
+    "baremetalsolution.skus.list"
+  ],
+  "stage": "GA"
+}

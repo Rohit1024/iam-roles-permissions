@@ -1,0 +1,17 @@
+{
+  "name": "roles/cloudtestservice.directAccessViewer",
+  "title": "Firebase Test Lab Direct Access Viewer",
+  "description": "Viewer, able to see what direct access sessions exist",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudtestservice.devicesession.get",
+    "cloudtestservice.devicesession.list",
+    "cloudtestservice.environmentcatalog.get",
+    "devicestreaming.deviceSessions.get",
+    "devicestreaming.deviceSessions.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

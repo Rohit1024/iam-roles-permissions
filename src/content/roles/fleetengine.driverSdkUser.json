@@ -1,0 +1,15 @@
+{
+  "name": "roles/fleetengine.driverSdkUser",
+  "title": "Fleet Engine Driver SDK User",
+  "description": "Read and limited update access to Fleet Engine resources",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "fleetengine.trips.get",
+    "fleetengine.trips.search",
+    "fleetengine.trips.update",
+    "fleetengine.vehicles.get",
+    "fleetengine.vehicles.updateLocation"
+  ],
+  "stage": "GA"
+}

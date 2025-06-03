@@ -1,0 +1,14 @@
+{
+  "name": "roles/dataconnectors.serviceAgent",
+  "title": "Data Connectors Service Agent",
+  "description": "Gives Data Connectors service agent permission to access the virtual private cloud",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "compute.globalOperations.get",
+    "compute.networks.access",
+    "vpcaccess.connectors.get",
+    "vpcaccess.connectors.use"
+  ],
+  "stage": "GA"
+}

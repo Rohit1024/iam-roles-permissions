@@ -1,0 +1,18 @@
+{
+  "name": "roles/chroniclesm.admin",
+  "title": "Chronicle Service Admin",
+  "description": "Admins can view and modify Chronicle service details.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "chroniclesm.gcpAssociations.create",
+    "chroniclesm.gcpAssociations.delete",
+    "chroniclesm.gcpAssociations.get",
+    "chroniclesm.gcpAssociations.list",
+    "chroniclesm.gcpLogFlowFilters.get",
+    "chroniclesm.gcpLogFlowFilters.update",
+    "chroniclesm.gcpSettings.get",
+    "chroniclesm.gcpSettings.update"
+  ],
+  "stage": "GA"
+}

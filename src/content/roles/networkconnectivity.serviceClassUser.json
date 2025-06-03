@@ -1,0 +1,15 @@
+{
+  "name": "roles/networkconnectivity.serviceClassUser",
+  "title": "Service Class User",
+  "description": "Service Class User uses a ServiceClass",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "networkconnectivity.serviceClasses.get",
+    "networkconnectivity.serviceClasses.list",
+    "networkconnectivity.serviceClasses.use",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

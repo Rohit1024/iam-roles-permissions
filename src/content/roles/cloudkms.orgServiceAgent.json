@@ -1,0 +1,11 @@
+{
+  "name": "roles/cloudkms.orgServiceAgent",
+  "title": "Cloud KMS Organization Service Agent",
+  "description": "Gives Cloud KMS organization-level service account access to managed resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudasset.assets.searchAllResources"
+  ],
+  "stage": "GA"
+}

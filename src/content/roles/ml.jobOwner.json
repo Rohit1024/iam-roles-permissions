@@ -1,0 +1,17 @@
+{
+  "name": "roles/ml.jobOwner",
+  "title": "AI Platform Job Owner",
+  "description": "Full access to the job.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "ml.jobs.cancel",
+    "ml.jobs.create",
+    "ml.jobs.get",
+    "ml.jobs.getIamPolicy",
+    "ml.jobs.list",
+    "ml.jobs.setIamPolicy",
+    "ml.jobs.update"
+  ],
+  "stage": "GA"
+}

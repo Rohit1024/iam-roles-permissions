@@ -1,0 +1,11 @@
+{
+  "name": "roles/dlp.inspectFindingsReader",
+  "title": "DLP Inspect Findings Reader",
+  "description": "Read DLP stored findings.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dlp.inspectFindings.list"
+  ],
+  "stage": "GA"
+}

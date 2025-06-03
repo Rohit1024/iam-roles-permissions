@@ -1,0 +1,15 @@
+{
+  "name": "roles/cloudaicompanion.topicAdmin",
+  "title": "Topic Admin",
+  "description": "Grants read, write and permission management access to the Topic resource.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudaicompanion.topics.delete",
+    "cloudaicompanion.topics.get",
+    "cloudaicompanion.topics.getIamPolicy",
+    "cloudaicompanion.topics.setIamPolicy",
+    "cloudaicompanion.topics.update"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "roles/observability.analyticsUser",
+  "title": "Observability Analytics User",
+  "description": "Grants permissions to use Cloud Observability Analytics.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "observability.analyticsViews.create",
+    "observability.analyticsViews.delete",
+    "observability.analyticsViews.get",
+    "observability.analyticsViews.list",
+    "observability.analyticsViews.update",
+    "observability.scopes.get"
+  ],
+  "stage": "BETA"
+}

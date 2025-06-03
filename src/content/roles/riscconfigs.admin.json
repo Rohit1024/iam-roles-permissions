@@ -1,0 +1,14 @@
+{
+  "name": "roles/riscconfigs.admin",
+  "title": "RISC Configuration Admin",
+  "description": "Read/write access to RISC config resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "clientauthconfig.clients.list",
+    "riscconfigurationservice.riscconfigs.createOrUpdate",
+    "riscconfigurationservice.riscconfigs.delete",
+    "riscconfigurationservice.riscconfigs.get"
+  ],
+  "stage": "BETA"
+}

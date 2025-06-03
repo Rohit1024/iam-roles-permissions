@@ -1,0 +1,11 @@
+{
+  "name": "roles/securitycenter.complianceReportsViewer",
+  "title": "Security Center Compliance Reports Viewer",
+  "description": "Read access to security center compliance reports",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "securitycenter.complianceReports.aggregate"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/source.reader",
+  "title": "Source Repository Reader",
+  "description": "Read access to repositories",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "source.repos.get",
+    "source.repos.list"
+  ],
+  "stage": "GA"
+}

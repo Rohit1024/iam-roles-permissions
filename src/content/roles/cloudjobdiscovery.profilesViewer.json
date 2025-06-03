@@ -1,0 +1,15 @@
+{
+  "name": "roles/cloudjobdiscovery.profilesViewer",
+  "title": "Cloud Talent Solution Profile Viewer",
+  "description": "Read access to all profile data in Cloud Talent Solution.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudjobdiscovery.profiles.get",
+    "cloudjobdiscovery.profiles.search",
+    "cloudjobdiscovery.tenants.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

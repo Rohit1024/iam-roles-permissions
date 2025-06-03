@@ -1,0 +1,13 @@
+{
+  "name": "roles/developerconnect.serviceAgent",
+  "title": "Developer Connect Service Agent",
+  "description": "Gives the Developer Connect API Service Account access to necessary GCP resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "apphub.applications.get",
+    "apphub.workloads.get",
+    "apphub.workloads.list"
+  ],
+  "stage": "GA"
+}

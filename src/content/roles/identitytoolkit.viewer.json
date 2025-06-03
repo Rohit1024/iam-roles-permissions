@@ -1,0 +1,15 @@
+{
+  "name": "roles/identitytoolkit.viewer",
+  "title": "Identity Toolkit Viewer",
+  "description": "Read access to Identity Toolkit resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "firebaseauth.configs.get",
+    "firebaseauth.users.get",
+    "identitytoolkit.tenants.get",
+    "identitytoolkit.tenants.getIamPolicy",
+    "identitytoolkit.tenants.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "roles/storage.legacyObjectReader",
+  "title": "Storage Legacy Object Reader",
+  "description": "Grants permission to view objects and their metadata, excluding ACLs.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "storage.objects.get"
+  ],
+  "stage": "GA"
+}

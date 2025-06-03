@@ -1,0 +1,15 @@
+{
+  "name": "roles/advisorynotifications.viewer",
+  "title": "Advisory Notifications Viewer",
+  "description": "Grants view access in Advisory Notifications",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "advisorynotifications.notifications.get",
+    "advisorynotifications.notifications.list",
+    "advisorynotifications.settings.get",
+    "resourcemanager.organizations.get",
+    "resourcemanager.projects.get"
+  ],
+  "stage": "GA"
+}

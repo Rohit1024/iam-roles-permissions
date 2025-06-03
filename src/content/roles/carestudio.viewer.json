@@ -1,0 +1,14 @@
+{
+  "name": "roles/carestudio.viewer",
+  "title": "Care Studio Patients Viewer",
+  "description": "This role can view all properties of Patients.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "carestudio.patients.get",
+    "carestudio.patients.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "roles/dlp.jobTriggersEditor",
+  "title": "DLP Job Triggers Editor",
+  "description": "Edit job triggers configurations.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dlp.jobTriggers.create",
+    "dlp.jobTriggers.delete",
+    "dlp.jobTriggers.get",
+    "dlp.jobTriggers.hybridInspect",
+    "dlp.jobTriggers.list",
+    "dlp.jobTriggers.update"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "roles/logging.fieldAccessor",
+  "title": "Log Field Accessor",
+  "description": "Ability to read restricted fields in a log bucket.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "logging.fields.access"
+  ],
+  "stage": "GA"
+}

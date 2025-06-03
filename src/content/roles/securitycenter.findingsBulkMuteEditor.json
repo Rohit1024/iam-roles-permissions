@@ -1,0 +1,11 @@
+{
+  "name": "roles/securitycenter.findingsBulkMuteEditor",
+  "title": "Security Center Findings Bulk Mute Editor",
+  "description": "Ability to mute findings in bulk",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "securitycenter.findings.bulkMuteUpdate"
+  ],
+  "stage": "GA"
+}

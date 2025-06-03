@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@/layouts/PageLayout.astro";
+import PermissionsPage from "@/components/react/PermissionsPage";
+
+const roles = await getCollection("roles");
+const uniquePermissions = new Set<string>();
+
+for (const role of roles) {
+  for (const permission of role.data.included_permissions) {
+    uniquePermissions.add(permission);
+  }
+}
+
+const permissions = [...uniquePermissions].sort();
+---
+
+<PageLayout title="IAM | Permissions" transition:persist>
+  <PermissionsPage client:load initialPermissions={permissions} roles={roles} />
+</PageLayout>

@@ -1,0 +1,11 @@
+{
+  "name": "roles/apigeeconnect.Admin",
+  "title": "Apigee Connect Admin",
+  "description": "Admin of Apigee Connect",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "apigeeconnect.connections.list"
+  ],
+  "stage": "GA"
+}

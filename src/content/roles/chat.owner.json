@@ -1,0 +1,12 @@
+{
+  "name": "roles/chat.owner",
+  "title": "Chat Apps Owner",
+  "description": "Can view and modify app configurations",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "chat.bots.get",
+    "chat.bots.update"
+  ],
+  "stage": "GA"
+}

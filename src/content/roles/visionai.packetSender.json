@@ -1,0 +1,15 @@
+{
+  "name": "roles/visionai.packetSender",
+  "title": "Vision AI Packet Sender",
+  "description": "Packet sender to the series.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "visionai.series.acquireLease",
+    "visionai.series.releaseLease",
+    "visionai.series.renewLease",
+    "visionai.series.send",
+    "visionai.streams.send"
+  ],
+  "stage": "BETA"
+}

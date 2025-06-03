@@ -1,0 +1,11 @@
+{
+  "name": "roles/iam.operationViewer",
+  "title": "IAM Operation Viewer",
+  "description": "Operation user role, with permissions to view and list operations in IAM v3",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "iam.operations.get"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "roles/visionai.assetViewer",
+  "title": "VisionAI Warehouse Asset Viewer",
+  "description": "Grants access to view media assets into the Warehouse.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "visionai.assets.get",
+    "visionai.assets.list",
+    "visionai.assets.search"
+  ],
+  "stage": "BETA"
+}

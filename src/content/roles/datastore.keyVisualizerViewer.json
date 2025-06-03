@@ -1,0 +1,15 @@
+{
+  "name": "roles/datastore.keyVisualizerViewer",
+  "title": "Cloud Datastore Key Visualizer Viewer",
+  "description": "Full access to Key Visualizer scans.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "datastore.databases.getMetadata",
+    "datastore.keyVisualizerScans.get",
+    "datastore.keyVisualizerScans.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

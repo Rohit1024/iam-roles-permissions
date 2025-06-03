@@ -1,0 +1,19 @@
+{
+  "name": "roles/monitoring.dashboardEditor",
+  "title": "Monitoring Dashboard Configuration Editor",
+  "description": "Read/write access to dashboard configurations.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "monitoring.dashboards.create",
+    "monitoring.dashboards.createTagBinding",
+    "monitoring.dashboards.delete",
+    "monitoring.dashboards.deleteTagBinding",
+    "monitoring.dashboards.get",
+    "monitoring.dashboards.list",
+    "monitoring.dashboards.listEffectiveTags",
+    "monitoring.dashboards.listTagBindings",
+    "monitoring.dashboards.update"
+  ],
+  "stage": "GA"
+}

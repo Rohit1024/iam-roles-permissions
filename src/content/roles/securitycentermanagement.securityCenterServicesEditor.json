@@ -1,0 +1,13 @@
+{
+  "name": "roles/securitycentermanagement.securityCenterServicesEditor",
+  "title": "Security Center Management Services Editor",
+  "description": "Full access to manage Cloud Security Command Center services configuration.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "securitycentermanagement.securityCenterServices.get",
+    "securitycentermanagement.securityCenterServices.list",
+    "securitycentermanagement.securityCenterServices.update"
+  ],
+  "stage": "GA"
+}

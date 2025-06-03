@@ -1,0 +1,13 @@
+{
+  "name": "roles/servicedirectory.networkAttacher",
+  "title": "Service Directory Network Attacher",
+  "description": "Gives access to attach VPC Networks to Service Directory Endpoints",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "servicedirectory.networks.attach"
+  ],
+  "stage": "GA"
+}

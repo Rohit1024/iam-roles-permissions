@@ -1,0 +1,12 @@
+{
+  "name": "roles/firebasedataconnect.dataAdmin",
+  "title": "Firebase Data Connect API Data Admin",
+  "description": "Full access to data sources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "firebasedataconnect.services.executeGraphql",
+    "firebasedataconnect.services.executeGraphqlRead"
+  ],
+  "stage": "BETA"
+}

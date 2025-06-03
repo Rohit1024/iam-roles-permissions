@@ -1,0 +1,14 @@
+{
+  "name": "roles/bigquerymigration.viewer",
+  "title": "MigrationWorkflow Viewer",
+  "description": "Viewer of EDW migration MigrationWorkflow.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "bigquerymigration.subtasks.get",
+    "bigquerymigration.subtasks.list",
+    "bigquerymigration.workflows.get",
+    "bigquerymigration.workflows.list"
+  ],
+  "stage": "GA"
+}

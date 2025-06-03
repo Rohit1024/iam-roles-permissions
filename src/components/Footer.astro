@@ -1,0 +1,18 @@
+---
+import Container from "@/components/Container.astro";
+import { FOOTER } from "@/config";
+---
+
+<Container>
+  <footer class="py-4">
+    <div
+      class="flex flex-col items-center justify-center gap-y-2 sm:flex-row sm:justify-between"
+    >
+      <div class="flex items-center">
+        <p class="text-center text-sm text-muted-foreground">
+          &copy; 2025 {FOOTER.label}
+        </p>
+      </div>
+    </div>
+  </footer>
+</Container>

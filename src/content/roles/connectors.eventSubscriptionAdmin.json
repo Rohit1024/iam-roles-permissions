@@ -1,0 +1,15 @@
+{
+  "name": "roles/connectors.eventSubscriptionAdmin",
+  "title": "Connectors Event Subscriptions Admin",
+  "description": "Event Subscription is a regional resource which creates subscriptions on events for a given connection within the given target project. This role grants Admin access to Connectors Subscription resources",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "connectors.eventSubscriptions.create",
+    "connectors.eventSubscriptions.delete",
+    "connectors.eventSubscriptions.get",
+    "connectors.eventSubscriptions.list",
+    "connectors.eventSubscriptions.update"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "roles/autoscaling.metricsWriter",
+  "title": "Autoscaling Metrics Writer",
+  "description": "Access to write metrics for autoscaling site",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "autoscaling.sites.writeMetrics"
+  ],
+  "stage": "BETA"
+}

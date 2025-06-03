@@ -1,0 +1,16 @@
+{
+  "name": "roles/dataplex.taxonomyViewer",
+  "title": "Dataplex Taxonomy Viewer",
+  "description": "Read access on DataTaxonomy, DataAttribute resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dataplex.dataAttributes.get",
+    "dataplex.dataAttributes.getIamPolicy",
+    "dataplex.dataAttributes.list",
+    "dataplex.dataTaxonomies.get",
+    "dataplex.dataTaxonomies.getIamPolicy",
+    "dataplex.dataTaxonomies.list"
+  ],
+  "stage": "GA"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "roles/cloudkms.expertRawAesCbc",
+  "title": "Cloud KMS Expert Raw AES-CBC Key Manager",
+  "description": "Enables raw AES-CBC keys management.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudkms.cryptoKeyVersions.manageRawAesCbcKeys",
+    "cloudkms.locations.get",
+    "cloudkms.locations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

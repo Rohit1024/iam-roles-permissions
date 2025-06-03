@@ -1,0 +1,18 @@
+{
+  "name": "roles/binaryauthorization.attestorsEditor",
+  "title": "Binary Authorization Attestor Editor",
+  "description": "Editor of Binary Authorization Attestors",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "binaryauthorization.attestors.create",
+    "binaryauthorization.attestors.delete",
+    "binaryauthorization.attestors.get",
+    "binaryauthorization.attestors.list",
+    "binaryauthorization.attestors.update",
+    "binaryauthorization.attestors.verifyImageAttested",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

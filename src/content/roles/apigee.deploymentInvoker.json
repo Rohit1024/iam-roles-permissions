@@ -1,0 +1,11 @@
+{
+  "name": "roles/apigee.deploymentInvoker",
+  "title": "Apigee Deployment Invoker",
+  "description": "Invoker of deployments in the apigee runtime",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "apigee.deployments.invoke"
+  ],
+  "stage": "GA"
+}

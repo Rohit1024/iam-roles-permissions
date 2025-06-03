@@ -1,0 +1,27 @@
+{
+  "name": "roles/aiplatform.expressAdmin",
+  "title": "Vertex AI Platform Express Admin",
+  "description": "Grants admin access to Vertex AI Express",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "aiplatform.batchPredictionJobs.cancel",
+    "aiplatform.batchPredictionJobs.create",
+    "aiplatform.batchPredictionJobs.delete",
+    "aiplatform.batchPredictionJobs.get",
+    "aiplatform.batchPredictionJobs.list",
+    "aiplatform.datasetVersions.create",
+    "aiplatform.datasetVersions.delete",
+    "aiplatform.datasetVersions.get",
+    "aiplatform.datasetVersions.list",
+    "aiplatform.datasetVersions.restore",
+    "aiplatform.datasets.create",
+    "aiplatform.datasets.delete",
+    "aiplatform.datasets.get",
+    "aiplatform.datasets.list",
+    "aiplatform.datasets.update",
+    "aiplatform.endpoints.predict",
+    "aiplatform.locations.evaluateInstances"
+  ],
+  "stage": "BETA"
+}

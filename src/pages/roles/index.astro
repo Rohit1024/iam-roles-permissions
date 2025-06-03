@@ -1,0 +1,11 @@
+---
+import RolesPage from "@/components/react/RolesPage";
+import PageLayout from "@/layouts/PageLayout.astro";
+import { getCollection } from "astro:content";
+
+const roles = await getCollection("roles");
+---
+
+<PageLayout title="IAM | Roles" transition:persist>
+  <RolesPage client:load initialRoles={roles} />
+</PageLayout>

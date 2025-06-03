@@ -1,0 +1,13 @@
+{
+  "name": "roles/dlp.connectionsReader",
+  "title": "DLP Connections Viewer",
+  "description": "View DLP Connections.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dlp.connections.get",
+    "dlp.connections.list",
+    "dlp.connections.search"
+  ],
+  "stage": "GA"
+}

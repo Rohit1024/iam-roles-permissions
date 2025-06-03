@@ -1,0 +1,15 @@
+{
+  "name": "roles/assuredworkloads.monitoringServiceAgent",
+  "title": "Assured Workloads Monitoring Service Agent",
+  "description": "Gives the Assured Workloads service account access to create CAIS feed and monitor Assured Workloads.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudasset.assets.exportResource",
+    "cloudasset.assets.listResource",
+    "cloudasset.feeds.create",
+    "cloudasset.feeds.delete",
+    "cloudasset.feeds.get"
+  ],
+  "stage": "GA"
+}

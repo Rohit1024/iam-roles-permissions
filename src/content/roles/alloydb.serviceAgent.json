@@ -1,0 +1,11 @@
+{
+  "name": "roles/alloydb.serviceAgent",
+  "title": "AlloyDB Service Agent",
+  "description": "Gives the AlloyDB service account permission to manage customer resources",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "alloydb.clusters.list"
+  ],
+  "stage": "GA"
+}

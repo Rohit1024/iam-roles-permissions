@@ -1,0 +1,13 @@
+{
+  "name": "roles/ciem.serviceAgent",
+  "title": "CIEM Service Agent",
+  "description": "Gives CIEM Service Account permission to access GCP resources",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "cloudasset.assets.exportIamPolicy",
+    "cloudasset.assets.exportResource",
+    "resourcemanager.organizations.get"
+  ],
+  "stage": "GA"
+}

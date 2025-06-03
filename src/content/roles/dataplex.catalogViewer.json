@@ -1,0 +1,33 @@
+{
+  "name": "roles/dataplex.catalogViewer",
+  "title": "Dataplex Catalog Viewer",
+  "description": "Has read access to Catalog resources: Entry Groups, Entry Types, Aspect Types, Entry Link Types, Entries and Entry Links. Can view IAM policies on Catalog resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "datacatalog.migrationConfig.get",
+    "dataplex.aspectTypes.get",
+    "dataplex.aspectTypes.getIamPolicy",
+    "dataplex.aspectTypes.list",
+    "dataplex.entries.get",
+    "dataplex.entries.list",
+    "dataplex.entryGroups.get",
+    "dataplex.entryGroups.getIamPolicy",
+    "dataplex.entryGroups.list",
+    "dataplex.entryLinks.get",
+    "dataplex.entryTypes.get",
+    "dataplex.entryTypes.getIamPolicy",
+    "dataplex.entryTypes.list",
+    "dataplex.glossaries.get",
+    "dataplex.glossaries.getIamPolicy",
+    "dataplex.glossaries.list",
+    "dataplex.glossaryCategories.get",
+    "dataplex.glossaryCategories.list",
+    "dataplex.glossaryTerms.get",
+    "dataplex.glossaryTerms.list",
+    "dataplex.projects.search",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

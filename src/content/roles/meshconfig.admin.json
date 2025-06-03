@@ -1,0 +1,11 @@
+{
+  "name": "roles/meshconfig.admin",
+  "title": "Mesh Config Admin",
+  "description": "Full access to all mesh configuration resources",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "meshconfig.projects.init"
+  ],
+  "stage": "BETA"
+}

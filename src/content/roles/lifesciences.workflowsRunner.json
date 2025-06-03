@@ -1,0 +1,14 @@
+{
+  "name": "roles/lifesciences.workflowsRunner",
+  "title": "Cloud Life Sciences Workflows Runner",
+  "description": "Full access to operate on Cloud Life Sciences workflows.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "lifesciences.operations.cancel",
+    "lifesciences.operations.get",
+    "lifesciences.operations.list",
+    "lifesciences.workflows.run"
+  ],
+  "stage": "BETA"
+}

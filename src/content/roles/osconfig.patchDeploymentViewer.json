@@ -1,0 +1,14 @@
+{
+  "name": "roles/osconfig.patchDeploymentViewer",
+  "title": "PatchDeployment Viewer",
+  "description": "Viewer of PatchDeployment resources",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "osconfig.patchDeployments.get",
+    "osconfig.patchDeployments.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

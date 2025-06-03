@@ -1,0 +1,12 @@
+{
+  "name": "roles/containeranalysis.notes.occurrences.viewer",
+  "title": "Container Analysis Occurrences for Notes Viewer",
+  "description": "Can view all Container Analysis Occurrences attached to a Note.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "containeranalysis.notes.get",
+    "containeranalysis.notes.listOccurrences"
+  ],
+  "stage": "GA"
+}

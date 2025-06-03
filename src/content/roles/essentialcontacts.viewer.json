@@ -1,0 +1,12 @@
+{
+  "name": "roles/essentialcontacts.viewer",
+  "title": "Essential Contacts Viewer",
+  "description": "Viewer for all essential contacts",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "essentialcontacts.contacts.get",
+    "essentialcontacts.contacts.list"
+  ],
+  "stage": "GA"
+}

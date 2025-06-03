@@ -1,0 +1,13 @@
+{
+  "name": "roles/privilegedaccessmanager.folderServiceAgent",
+  "title": "Privileged Access Manager Folder Service Agent",
+  "description": "Gives privileged access manager service account access to modify IAM policies on GCP folders",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.folders.get",
+    "resourcemanager.folders.getIamPolicy",
+    "resourcemanager.folders.setIamPolicy"
+  ],
+  "stage": "GA"
+}

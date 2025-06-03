@@ -1,0 +1,17 @@
+{
+  "name": "roles/recommender.networkAnalyzerVpcConnectivityAdmin",
+  "title": "Network Analyzer VPC Connectivity Recommender Admin",
+  "description": "Admin of Network Analyzer VPC Connectivity Insights and Recommendations.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "recommender.locations.get",
+    "recommender.locations.list",
+    "recommender.networkAnalyzerVpcConnectivityInsights.get",
+    "recommender.networkAnalyzerVpcConnectivityInsights.list",
+    "recommender.networkAnalyzerVpcConnectivityInsights.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

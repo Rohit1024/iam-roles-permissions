@@ -1,0 +1,11 @@
+{
+  "name": "roles/visualinspection.usageMetricsReporter",
+  "title": "Visual Inspection AI Usage Metrics Reporter",
+  "description": "ReportUsageMetric access to Visual Inspection AI Service",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "visualinspection.locations.reportUsageMetrics"
+  ],
+  "stage": "GA"
+}

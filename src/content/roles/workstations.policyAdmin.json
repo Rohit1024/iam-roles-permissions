@@ -1,0 +1,12 @@
+{
+  "name": "roles/workstations.policyAdmin",
+  "title": "Cloud Workstations Policy Admin",
+  "description": "Grants permission to set IAM policy on workstation.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "workstations.workstations.getIamPolicy",
+    "workstations.workstations.setIamPolicy"
+  ],
+  "stage": "GA"
+}

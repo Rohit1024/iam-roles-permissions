@@ -1,0 +1,15 @@
+{
+  "name": "roles/osconfig.guestPolicyEditor",
+  "title": "GuestPolicy Editor",
+  "description": "Editor of GuestPolicy resources",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "osconfig.guestPolicies.get",
+    "osconfig.guestPolicies.list",
+    "osconfig.guestPolicies.update",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

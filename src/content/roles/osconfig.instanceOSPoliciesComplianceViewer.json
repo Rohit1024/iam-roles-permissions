@@ -1,0 +1,14 @@
+{
+  "name": "roles/osconfig.instanceOSPoliciesComplianceViewer",
+  "title": "InstanceOSPoliciesCompliance Viewer",
+  "description": "Viewer of OS Policies Compliance of VM instances",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "osconfig.instanceOSPoliciesCompliances.get",
+    "osconfig.instanceOSPoliciesCompliances.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

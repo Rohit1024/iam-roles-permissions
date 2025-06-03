@@ -1,0 +1,25 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import PageLayout from "@/layouts/PageLayout.astro";
+import RoleDetailPage from "@/components/react/RoleDetails";
+
+type Role = CollectionEntry<"roles">;
+
+export async function getStaticPaths() {
+  const roles = await getCollection("roles");
+  return roles.map((role) => ({
+    params: { name: role.id },
+    props: { role },
+  }));
+}
+
+const { role } = Astro.props;
+---
+
+<PageLayout
+  title={`Role : ${role.data.name}`}
+  description={role.data.description}
+  transition:animate="slide"
+>
+  <RoleDetailPage client:load role={role} />
+</PageLayout>

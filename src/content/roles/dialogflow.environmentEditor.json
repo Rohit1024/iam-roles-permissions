@@ -1,0 +1,23 @@
+{
+  "name": "roles/dialogflow.environmentEditor",
+  "title": "Dialogflow Environment editor",
+  "description": "Can read & update environment and its sub-resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dialogflow.deployments.get",
+    "dialogflow.deployments.list",
+    "dialogflow.environments.get",
+    "dialogflow.environments.getHistory",
+    "dialogflow.environments.list",
+    "dialogflow.environments.lookupHistory",
+    "dialogflow.environments.runContinuousTest",
+    "dialogflow.environments.update",
+    "dialogflow.experiments.create",
+    "dialogflow.experiments.delete",
+    "dialogflow.experiments.get",
+    "dialogflow.experiments.list",
+    "dialogflow.experiments.update"
+  ],
+  "stage": "GA"
+}

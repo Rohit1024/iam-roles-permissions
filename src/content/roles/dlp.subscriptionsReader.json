@@ -1,0 +1,12 @@
+{
+  "name": "roles/dlp.subscriptionsReader",
+  "title": "DLP Subscription Viewer",
+  "description": "View DLP subscriptions.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "dlp.subscriptions.get",
+    "dlp.subscriptions.list"
+  ],
+  "stage": "GA"
+}

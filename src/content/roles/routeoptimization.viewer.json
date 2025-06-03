@@ -1,0 +1,13 @@
+{
+  "name": "roles/routeoptimization.viewer",
+  "title": "Route Optimization Viewer",
+  "description": "This role can view any long-running Operations.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list",
+    "routeoptimization.operations.get"
+  ],
+  "stage": "GA"
+}

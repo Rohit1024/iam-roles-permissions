@@ -1,0 +1,9 @@
+{
+  "name": "roles/meshconfig.viewer",
+  "title": "Mesh Config Viewer",
+  "description": "Read access to mesh configuration",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [],
+  "stage": "BETA"
+}

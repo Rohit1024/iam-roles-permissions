@@ -1,0 +1,14 @@
+{
+  "name": "roles/readerrevenuesubscriptionlinking.viewer",
+  "title": "Subscription Linking Viewer",
+  "description": "This role can view all publication reader resources",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "readerrevenuesubscriptionlinking.readerEntitlements.get",
+    "readerrevenuesubscriptionlinking.readers.get",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "GA"
+}

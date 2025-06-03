@@ -1,0 +1,12 @@
+{
+  "name": "roles/datastore.backupSchedulesViewer",
+  "title": "Cloud Datastore Backup Schedules Viewer",
+  "description": "Read access to backup schedules in Cloud Datastore.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "datastore.backupSchedules.get",
+    "datastore.backupSchedules.list"
+  ],
+  "stage": "GA"
+}

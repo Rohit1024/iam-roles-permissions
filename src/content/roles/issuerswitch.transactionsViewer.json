@@ -1,0 +1,18 @@
+{
+  "name": "roles/issuerswitch.transactionsViewer",
+  "title": "Issuerswitch Transactions Viewer",
+  "description": "This role can view all transactions",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "issuerswitch.complaintTransactions.list",
+    "issuerswitch.financialTransactions.list",
+    "issuerswitch.mandateTransactions.list",
+    "issuerswitch.metadataTransactions.list",
+    "issuerswitch.operations.get",
+    "issuerswitch.operations.list",
+    "resourcemanager.projects.get",
+    "resourcemanager.projects.list"
+  ],
+  "stage": "BETA"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "roles/logging.logWriter",
+  "title": "Logs Writer",
+  "description": "Access to write logs.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "logging.logEntries.create",
+    "logging.logEntries.route"
+  ],
+  "stage": "GA"
+}

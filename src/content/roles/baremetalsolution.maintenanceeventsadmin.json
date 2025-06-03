@@ -1,0 +1,14 @@
+{
+  "name": "roles/baremetalsolution.maintenanceeventsadmin",
+  "title": "Maintenance Events Admin",
+  "description": "Administrator of Bare Metal Solution maintenance events resources",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "baremetalsolution.maintenanceevents.addProposal",
+    "baremetalsolution.maintenanceevents.approve",
+    "baremetalsolution.maintenanceevents.get",
+    "baremetalsolution.maintenanceevents.list"
+  ],
+  "stage": "GA"
+}

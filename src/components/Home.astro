@@ -1,0 +1,55 @@
+---
+import Catalog from "@/components/Catalog.astro";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import { SITE } from "@/config";
+import logo from "@/public/identity_and_access_management.png";
+import { getImage } from "astro:assets";
+const optimizedImage = await getImage({
+  src: logo,
+  format: "png",
+});
+---
+
+<Card className="my-6">
+  <CardHeader>
+    <div class="flex items-center gap-2">
+      <img
+        src={optimizedImage.src}
+        width={optimizedImage.attributes.width}
+        height={optimizedImage.attributes.height}
+        alt=""
+        class="size-8"
+      />
+      <CardTitle className="text-3xl">{SITE.TITLE}</CardTitle>
+    </div>
+    <CardDescription className="mb-6">
+      <strong>{SITE.TITLE}</strong> is an independent tool designed to simplify the
+      exploration of
+      <a href="https://cloud.google.com/" class="text-primary hover:underline">
+        Google Cloud Platform
+      </a>
+      (GCP)
+      <a
+        href="https://cloud.google.com/security/products/iam"
+        class="text-primary hover:underline"
+      >
+        Identity and Access Management
+      </a>
+      (IAM) predefined roles and permissions.
+      <span class="text-muted-foreground">
+        This tool is not affiliated with or endorsed by Google.
+      </span>
+    </CardDescription>
+  </CardHeader>
+  <Separator className="my-6 -mt-4" />
+  <CardContent>
+    <Catalog />
+  </CardContent>
+</Card>

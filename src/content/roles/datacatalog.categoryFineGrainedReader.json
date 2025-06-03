@@ -1,0 +1,11 @@
+{
+  "name": "roles/datacatalog.categoryFineGrainedReader",
+  "title": "Fine-Grained Reader",
+  "description": "Read access to sub-resources tagged by a policy tag, for example, BigQuery columns",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "datacatalog.categories.fineGrainedGet"
+  ],
+  "stage": "GA"
+}
