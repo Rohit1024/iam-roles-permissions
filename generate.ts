@@ -86,12 +86,7 @@ async function getRoleDetails(roleName: string): Promise<Role> {
 }
 
 async function main() {
-  const args = process.argv.slice(2);
-  if (args.includes("--crawl")) {
-    await crawlRoles();
-  } else {
-    console.log("Please specify --crawl");
-  }
+  return await crawlRoles();
 }
 
 main().catch(console.error);

@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "generate": "bun run generate.ts --crawl"
+    "generate": "bun run generate.ts"
   },
   "dependencies": {
     "@astrojs/node": "^9.2.2",
