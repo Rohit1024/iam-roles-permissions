@@ -21,7 +21,6 @@ export const SITE: Site = {
 export const NAV_LINKS: Link[] = [
   { href: "/roles", label: "roles" },
   { href: "/permissions", label: "permissions" },
-  { href: "/craft", label: "craft custom role" },
 ];
 
 export const FOOTER = {
