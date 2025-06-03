@@ -47,7 +47,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # actions/checkout@v4
+        uses: "actions/checkout@v4" # actions/checkout@v4
 
       - name: "Setup Bun"
         uses: "oven-sh/setup-bun@v1"
@@ -57,7 +57,7 @@ jobs:
 
       - id: "sdk-auth"
         name: "Authenticate to Google Cloud"
-        uses: "google-github-actions/auth@f112390a2df9932162083945e46d439060d66ec2" # google-github-actions/auth@v2
+        uses: "google-github-actions/auth@v2" # google-github-actions/auth@v2
         with:
           workload_identity_provider: "${{ secrets.WIF_PROVIDER }}" # TODO: replace with your workload identity provider
           service_account: "${{ secrets.WIF_SERVICE_ACCOUNT }}"
@@ -67,17 +67,23 @@ jobs:
 
       - id: "docker-auth"
         name: "Docker Auth"
-        uses: "docker/login-action@9780b0c442fbb1117ed29e0efdff1e18412f7567" # docker/login-action@v3
+        uses: "docker/login-action@v3" # docker/login-action@v3
         with:
           username: "oauth2accesstoken"
-          password: "${{ steps.auth.outputs.auth_token }}"
+          password: "${{ steps.sdk-auth.outputs.auth_token }}"
           registry: "${{ env.REGION }}-docker.pkg.dev"
 
       - id: "docker-build"
         name: "Build and Push Container"
         run: |-
-          DOCKER_TAG="$${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.AR_REPOSITIRY }}/${{ env.SERVICE }}:${{ github.sha }}"
-          docker build --tag "${DOCKER_TAG}" --cache-from "$${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.AR_REPOSITIRY }}/${{ env.SERVICE }}:latest" . 
+          REGION="${{ env.REGION }}"
+          PROJECT_ID="${{ env.PROJECT_ID }}"
+          AR_REPOSITIRY="${{ env.AR_REPOSITIRY }}"
+          SERVICE="${{ env.SERVICE }}"
+          GITHUB_SHA="${{ github.sha }}"
+
+          DOCKER_TAG="${REGION}-docker.pkg.dev/${PROJECT_ID}/${AR_REPOSITIRY}/${SERVICE}:${GITHUB_SHA}"
+          docker build --tag "${DOCKER_TAG}" --cache-from "${REGION}-docker.pkg.dev/${PROJECT_ID}/${AR_REPOSITIRY}/${SERVICE}:latest" .
           docker push "${DOCKER_TAG}"
 
       - id: "deploy"
