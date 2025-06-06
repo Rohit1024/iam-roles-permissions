@@ -38,3 +38,4 @@ substitutions:
   _REPOSITORY: github-ci-registry
   _SERVICE_NAME: iam-roles-permissions
   _IMAGE: iam-roles-permissions-image
+  _SITE_URL: iam-roles.cloud-learn.xyz
