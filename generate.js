@@ -7,17 +7,22 @@ const writeFile = promisify(fs.writeFile);
 
 const iam = google.iam("v1");
 
-interface Role {
-  name: string;
-  title: string;
-  description: string;
-  etag: string;
-  deleted: boolean;
-  included_permissions: string[];
-  stage: string;
-  permissionCount?: number;
-}
+/**
+ * @typedef {Object} Role
+ * @property {string} name
+ * @property {string} title
+ * @property {string} description
+ * @property {string} etag
+ * @property {boolean} deleted
+ * @property {string[]} included_permissions
+ * @property {string} stage
+ * @property {number} [permissionCount]
+ */
 
+/**
+ * Crawls IAM roles, fetches their details, and saves them as JSON files.
+ * @returns {Promise<void>}
+ */
 async function crawlRoles() {
   const auth = new google.auth.GoogleAuth({
     scopes: ["https://www.googleapis.com/auth/cloud-platform"],
@@ -41,8 +46,13 @@ async function crawlRoles() {
   );
 }
 
-async function listAllRoles(): Promise<Role[]> {
-  let allRoles: Role[] = [];
+/**
+ * Lists all available IAM roles.
+ * @returns {Promise<Array<Role>>} A promise that resolves to an array of Role objects.
+ */
+async function listAllRoles() {
+  /** @type {Array<Role>} */
+  let allRoles = [];
   let pageToken = "";
 
   do {
@@ -53,15 +63,17 @@ async function listAllRoles(): Promise<Role[]> {
 
     if (res.data.roles) {
       allRoles = allRoles.concat(
-        res.data.roles.map((r: any) => ({
-          name: r.name || "",
-          title: r.title || "",
-          description: r.description || "",
-          deleted: r.deleted || false,
-          etag: r.etag || "",
-          included_permissions: r.includedPermissions || [],
-          stage: r.stage || "",
-        }))
+        /** @type {Array<Role>} */ (
+          res.data.roles.map((r) => ({
+            name: r.name || "",
+            title: r.title || "",
+            description: r.description || "",
+            deleted: r.deleted || false,
+            etag: r.etag || "",
+            included_permissions: r.includedPermissions || [],
+            stage: r.stage || "",
+          }))
+        )
       );
     }
 
@@ -71,7 +83,12 @@ async function listAllRoles(): Promise<Role[]> {
   return allRoles;
 }
 
-async function getRoleDetails(roleName: string): Promise<Role> {
+/**
+ * Gets the detailed information for a specific IAM role.
+ * @param {string} roleName - The full name of the role (e.g., "roles/viewer").
+ * @returns {Promise<Role>} A promise that resolves to a detailed Role object.
+ */
+async function getRoleDetails(roleName) {
   const res = await iam.roles.get({ name: roleName });
   const role = res.data;
   return {
@@ -85,6 +102,10 @@ async function getRoleDetails(roleName: string): Promise<Role> {
   };
 }
 
+/**
+ * Main function to initiate the role crawling process.
+ * @returns {Promise<void>}
+ */
 async function main() {
   return await crawlRoles();
 }

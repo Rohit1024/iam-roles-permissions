@@ -1,0 +1,40 @@
+timeout: 3600s # 1 hour timeout for the build process
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPOSITORY}/${_IMAGE}",
+        ".",
+      ]
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "push",
+        "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPOSITORY}/${_IMAGE}",
+      ]
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: gcloud
+    args:
+      [
+        "run",
+        "deploy",
+        "${_SERVICE_NAME}",
+        "--image",
+        "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPOSITORY}/${_IMAGE}",
+        "--region",
+        "${_REGION}",
+        "--set-env-vars",
+        "SITE_URL=${_SITE_URL}",
+        "--allow-unauthenticated",
+      ]
+images:
+  - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPOSITORY}/${_IMAGE}"
+
+# Define substitutions
+substitutions:
+  _REGION: asia-south1
+  _REPOSITORY: github-ci-registry
+  _SERVICE_NAME: iam-roles-permissions
+  _IMAGE: iam-roles-permissions-image
