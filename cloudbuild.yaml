@@ -31,8 +31,9 @@ steps:
       ]
 images:
   - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPOSITORY}/${_IMAGE}"
+options:
+  logging: CLOUD_LOGGING_ONLY
 
-# Define substitutions
 substitutions:
   _REGION: asia-south1
   _REPOSITORY: github-ci-registry
