@@ -42,8 +42,8 @@ jobs:
       - id: "docker-build"
         name: "Build and Push Container"
         run: |-
-          DOCKER_TAG="$${{ env.AR_REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.AR_REPOSITORY }}/${{ env.SERVICE }}:${{ github.sha }}"
-          docker build --tag "${DOCKER_TAG}" --cache-from "$${{ env.AR_REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.AR_REPOSITORY }}/${{ env.SERVICE }}:latest" . 
+          DOCKER_TAG="${{ env.AR_REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.AR_REPOSITORY }}/${{ env.SERVICE }}:${{ github.sha }}"
+          docker build --tag "${DOCKER_TAG}" --cache-from "${{ env.AR_REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.AR_REPOSITORY }}/${{ env.SERVICE }}:latest" . 
           docker push "${DOCKER_TAG}"
 
       - id: "deploy"
@@ -52,7 +52,7 @@ jobs:
         with:
           service: "${{ env.SERVICE }}"
           region: "${{ env.REGION }}"
-          image: "$${{ env.AR_REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.AR_REPOSITORY }}/${{ env.SERVICE }}:${{ github.sha }}"
+          image: "${{ env.AR_REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.AR_REPOSITORY }}/${{ env.SERVICE }}:${{ github.sha }}"
           env_vars: |
             SITE_URL=${{ secrets.SITE_URL }}
 
