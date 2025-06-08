@@ -5,6 +5,7 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "alloydb.operations.get",
     "cloudsql.instances.get",
     "compute.addresses.list",
     "compute.addresses.use",

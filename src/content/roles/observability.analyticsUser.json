@@ -5,6 +5,9 @@
   "etag": "AA==",
   "deleted": false,
   "included_permissions": [
+    "logging.queries.getShared",
+    "logging.queries.listShared",
+    "logging.queries.usePrivate",
     "observability.analyticsViews.create",
     "observability.analyticsViews.delete",
     "observability.analyticsViews.get",
