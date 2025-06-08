@@ -1,0 +1,62 @@
+name: "Build and Deploy to Cloud Run"
+
+on:
+  push:
+    branches:
+      - "main"
+
+env:
+  PROJECT_ID: "${{ secrets.PROJECT_ID }}"
+  REGION: "${{ secrets.REGION }}"
+  SERVICE: "iam-roles-permissions"
+  AR_REGION: "asia"
+  AR_REPOSITORY: "asia-registry"
+
+jobs:
+  deploy:
+    runs-on: "ubuntu-latest"
+
+    permissions:
+      contents: "read"
+      id-token: "write"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v4"
+
+      - id: "sdk-auth"
+        name: "Authenticate to Google Cloud"
+        uses: "google-github-actions/auth@v2"
+        with:
+          workload_identity_provider: "${{ secrets.WIF_PROVIDER }}"
+          service_account: "${{ secrets.WIF_SERVICE_ACCOUNT }}"
+
+      - id: "docker-auth"
+        name: "Docker Auth"
+        uses: "docker/login-action@v2"
+        with:
+          username: "oauth2accesstoken"
+          password: "${{ steps.sdk-auth.outputs.auth_token }}"
+          registry: "${{ env.AR_REGION }}-docker.pkg.dev"
+
+      - id: "docker-build"
+        name: "Build and Push Container"
+        run: |-
+          DOCKER_TAG="$${{ env.AR_REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.AR_REPOSITORY }}/${{ env.SERVICE }}:${{ github.sha }}"
+          docker build --tag "${DOCKER_TAG}" --cache-from "$${{ env.AR_REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.AR_REPOSITORY }}/${{ env.SERVICE }}:latest" . 
+          docker push "${DOCKER_TAG}"
+
+      - id: "deploy"
+        name: "Deploy to Cloud Run"
+        uses: "google-github-actions/deploy-cloudrun@v2"
+        with:
+          service: "${{ env.SERVICE }}"
+          region: "${{ env.REGION }}"
+          image: "$${{ env.AR_REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.AR_REPOSITORY }}/${{ env.SERVICE }}:${{ github.sha }}"
+          env_vars: |
+            SITE_URL=${{ secrets.SITE_URL }}
+
+      - id: "output"
+        name: "Show output"
+        run: |-
+          echo ${{ steps.deploy.outputs.url }}
