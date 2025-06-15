@@ -1,0 +1,20 @@
+{
+  "name": "roles/geminidataanalytics.dataAgentOwner",
+  "title": "Gemini Data Analytics Data Agent Owner",
+  "description": "Full access to existing Gemini Data Analytics resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "geminidataanalytics.dataAgents.delete",
+    "geminidataanalytics.dataAgents.get",
+    "geminidataanalytics.dataAgents.list",
+    "geminidataanalytics.dataAgents.update",
+    "geminidataanalytics.locations.get",
+    "geminidataanalytics.locations.list",
+    "geminidataanalytics.operations.cancel",
+    "geminidataanalytics.operations.delete",
+    "geminidataanalytics.operations.get",
+    "geminidataanalytics.operations.list"
+  ],
+  "stage": "BETA"
+}

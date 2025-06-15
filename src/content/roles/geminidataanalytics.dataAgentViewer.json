@@ -1,0 +1,12 @@
+{
+  "name": "roles/geminidataanalytics.dataAgentViewer",
+  "title": "Gemini Data Analytics Data Agent Viewer",
+  "description": "Readonly access to Gemini Data Analytics resources.",
+  "etag": "AA==",
+  "deleted": false,
+  "included_permissions": [
+    "geminidataanalytics.dataAgents.get",
+    "geminidataanalytics.dataAgents.list"
+  ],
+  "stage": "BETA"
+}
